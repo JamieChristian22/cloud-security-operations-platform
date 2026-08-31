@@ -1,0 +1,6 @@
+resource "azurerm_resource_group" "this" { name="rg-${var.name}" location=var.location tags=var.tags }
+resource "azurerm_virtual_network" "this" { name="vnet-${var.name}" address_space=[var.vnet_cidr] location=azurerm_resource_group.this.location resource_group_name=azurerm_resource_group.this.name tags=var.tags }
+resource "azurerm_subnet" "private" { name="snet-private" resource_group_name=azurerm_resource_group.this.name virtual_network_name=azurerm_virtual_network.this.name address_prefixes=[var.subnet_cidr] }
+resource "azurerm_network_security_group" "private" { name="nsg-${var.name}-private" location=azurerm_resource_group.this.location resource_group_name=azurerm_resource_group.this.name tags=var.tags security_rule { name="DenyInternetInbound" priority=4096 direction="Inbound" access="Deny" protocol="*" source_port_range="*" destination_port_range="*" source_address_prefix="Internet" destination_address_prefix="*" } }
+resource "azurerm_subnet_network_security_group_association" "private" { subnet_id=azurerm_subnet.private.id network_security_group_id=azurerm_network_security_group.private.id }
+resource "azurerm_log_analytics_workspace" "security" { name="law-${var.name}-security" location=azurerm_resource_group.this.location resource_group_name=azurerm_resource_group.this.name sku="PerGB2018" retention_in_days=var.log_retention_days tags=var.tags }

@@ -1,0 +1,6 @@
+resource "google_compute_network" "this" { name="${var.name}-vpc" auto_create_subnetworks=false routing_mode="GLOBAL" }
+resource "google_compute_subnetwork" "private" { name="${var.name}-private" ip_cidr_range=var.subnet_cidr region=var.region network=google_compute_network.this.id private_ip_google_access=true log_config { aggregation_interval="INTERVAL_5_SEC" flow_sampling=0.5 metadata="INCLUDE_ALL_METADATA" } }
+resource "google_compute_firewall" "deny_ssh_internet" { name="${var.name}-deny-ssh-internet" network=google_compute_network.this.name direction="INGRESS" priority=1000 deny { protocol="tcp" ports=["22"] } source_ranges=["0.0.0.0/0"] }
+resource "google_logging_project_sink" "security" { name="${var.name}-security-sink" destination="storage.googleapis.com/${google_storage_bucket.audit.name}" filter="severity>=WARNING" unique_writer_identity=true }
+resource "google_storage_bucket" "audit" { name="${var.project_id}-${var.name}-audit" location=var.region uniform_bucket_level_access=true public_access_prevention="enforced" versioning { enabled=true } lifecycle_rule { condition { age=var.log_retention_days } action { type="Delete" } } }
+resource "google_storage_bucket_iam_member" "sink" { bucket=google_storage_bucket.audit.name role="roles/storage.objectCreator" member=google_logging_project_sink.security.writer_identity }

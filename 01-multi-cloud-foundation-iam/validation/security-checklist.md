@@ -1,0 +1,13 @@
+# Security Validation Checklist
+- [x] No direct inbound SSH/RDP rule in sample IaC
+- [x] S3 public access block enabled
+- [x] S3 versioning enabled for audit bucket
+- [x] Resources tagged with environment and owner context
+- [x] Role separation documented
+- [x] MFA required by policy design
+- [x] Joiner/mover/leaver workflow documented
+- [x] Quarterly access review documented
+- [x] Production write access requires approval
+- [x] Secrets excluded from repository
+- [x] IaC is reviewable in Git
+- [x] Logging requirements included in architecture
