@@ -1,9 +1,0 @@
-severity,control,provider,resource,evidence,remediation,mapping
-High,MFA,entra-id,Jordan Lee,Enabled workforce account has MFA=false,Require MFA and verify registration before normal access.,CIS identity hygiene; NIST PR.AA
-High,Dormant account,entra-id,Morgan Chen,Enabled account inactive 61 days,Review owner; disable if no approved business need.,CIS identity hygiene; NIST PR.AA
-High,MFA,entra-id,Riley Brooks,Enabled workforce account has MFA=false,Require MFA and verify registration before normal access.,CIS identity hygiene; NIST PR.AA
-High,Credential age,aws,AKIA-LAB-001,Active key age is 132 days,Rotate/revoke and prefer short-lived credentials.,CIS credential management; NIST PR.AA
-Critical,Least privilege,aws,LegacyAdmin,Policy contains wildcard action *,Replace wildcard administration with task-scoped actions/resources.,CIS access control; NIST PR.AA
-Critical,Public storage,gcp,northstar-demo-assets,Storage public=true,Block public access unless explicitly approved and documented.,CIS data protection; NIST PR.DS
-Critical,Management exposure,azure,legacy-ssh,Port 22 exposed to 0.0.0.0/0,Remove public management access; use managed session/bastion/VPN.,CIS network security; NIST PR.IR
-Low,Tagging,gcp,vm-002,Missing tags: Owner,Add required ownership/environment tags.,Operational governance
