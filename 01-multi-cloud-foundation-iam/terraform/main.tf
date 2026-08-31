@@ -1,4 +1,0 @@
-locals { common_tags={Project="cloud-security-operations-platform",Environment=var.environment,ManagedBy="Terraform",DataClass="Internal",Owner="cloud-operations",CostCenter="LAB-001"} }
-module "aws_foundation" { source="./modules/aws-foundation" name="northstar-${var.environment}" vpc_cidr="10.20.0.0/16" private_subnets={private_a={cidr="10.20.10.0/24",az="${var.aws_region}a"},private_b={cidr="10.20.20.0/24",az="${var.aws_region}b"}} tags=local.common_tags log_retention_days=var.log_retention_days }
-module "azure_foundation" { source="./modules/azure-foundation" name="northstar-${var.environment}" location=var.azure_location vnet_cidr="10.30.0.0/16" subnet_cidr="10.30.10.0/24" tags=local.common_tags log_retention_days=var.log_retention_days }
-module "gcp_foundation" { source="./modules/gcp-foundation" name="northstar-${var.environment}" project_id=var.gcp_project_id region=var.gcp_region subnet_cidr="10.40.10.0/24" log_retention_days=var.log_retention_days }
