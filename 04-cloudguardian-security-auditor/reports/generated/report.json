@@ -1,0 +1,100 @@
+{
+  "risk_score": 100,
+  "finding_count": 8,
+  "summary": {
+    "by_severity": {
+      "High": 4,
+      "Critical": 3,
+      "Low": 1
+    },
+    "by_control": {
+      "MFA": 2,
+      "Dormant account": 1,
+      "Credential age": 1,
+      "Least privilege": 1,
+      "Public storage": 1,
+      "Management exposure": 1,
+      "Tagging": 1
+    },
+    "by_provider": {
+      "entra-id": 3,
+      "aws": 2,
+      "gcp": 2,
+      "azure": 1
+    }
+  },
+  "findings": [
+    {
+      "severity": "High",
+      "control": "MFA",
+      "provider": "entra-id",
+      "resource": "Jordan Lee",
+      "evidence": "Enabled workforce account has MFA=false",
+      "remediation": "Require MFA and verify registration before normal access.",
+      "mapping": "CIS identity hygiene; NIST PR.AA"
+    },
+    {
+      "severity": "High",
+      "control": "Dormant account",
+      "provider": "entra-id",
+      "resource": "Morgan Chen",
+      "evidence": "Enabled account inactive 61 days",
+      "remediation": "Review owner; disable if no approved business need.",
+      "mapping": "CIS identity hygiene; NIST PR.AA"
+    },
+    {
+      "severity": "High",
+      "control": "MFA",
+      "provider": "entra-id",
+      "resource": "Riley Brooks",
+      "evidence": "Enabled workforce account has MFA=false",
+      "remediation": "Require MFA and verify registration before normal access.",
+      "mapping": "CIS identity hygiene; NIST PR.AA"
+    },
+    {
+      "severity": "High",
+      "control": "Credential age",
+      "provider": "aws",
+      "resource": "AKIA-LAB-001",
+      "evidence": "Active key age is 132 days",
+      "remediation": "Rotate/revoke and prefer short-lived credentials.",
+      "mapping": "CIS credential management; NIST PR.AA"
+    },
+    {
+      "severity": "Critical",
+      "control": "Least privilege",
+      "provider": "aws",
+      "resource": "LegacyAdmin",
+      "evidence": "Policy contains wildcard action *",
+      "remediation": "Replace wildcard administration with task-scoped actions/resources.",
+      "mapping": "CIS access control; NIST PR.AA"
+    },
+    {
+      "severity": "Critical",
+      "control": "Public storage",
+      "provider": "gcp",
+      "resource": "northstar-demo-assets",
+      "evidence": "Storage public=true",
+      "remediation": "Block public access unless explicitly approved and documented.",
+      "mapping": "CIS data protection; NIST PR.DS"
+    },
+    {
+      "severity": "Critical",
+      "control": "Management exposure",
+      "provider": "azure",
+      "resource": "legacy-ssh",
+      "evidence": "Port 22 exposed to 0.0.0.0/0",
+      "remediation": "Remove public management access; use managed session/bastion/VPN.",
+      "mapping": "CIS network security; NIST PR.IR"
+    },
+    {
+      "severity": "Low",
+      "control": "Tagging",
+      "provider": "gcp",
+      "resource": "vm-002",
+      "evidence": "Missing tags: Owner",
+      "remediation": "Add required ownership/environment tags.",
+      "mapping": "Operational governance"
+    }
+  ]
+}
