@@ -1,0 +1,26 @@
+{
+  "overall": "PASS",
+  "detections": [
+    {
+      "script": "credential-compromise.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "HIGH user=dev-jlee source=203.0.113.77 score=90 reasons=new source, 5 discovery actions, denied probing",
+      "stderr": ""
+    },
+    {
+      "script": "password_spray.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "[\n  {\n    \"severity\": \"high\",\n    \"source_ip\": \"203.0.113.90\",\n    \"failed_users\": [\n      \"jamie@northstar.example\",\n      \"riley@northstar.example\",\n      \"sam@northstar.example\"\n    ],\n    \"subsequent_success_users\": [\n      \"sam@northstar.example\"\n    ]\n  }\n]",
+      "stderr": ""
+    },
+    {
+      "script": "impossible_travel.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "[\n  {\n    \"severity\": \"high\",\n    \"user\": \"alex@northstar.example\",\n    \"reason\": \"country changed within 30 minutes\",\n    \"from\": \"US\",\n    \"to\": \"DE\"\n  }\n]",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {"id":"aws-s3-audit-logs","cloud":"AWS","type":"object_storage","public":false,"encrypted":true,"logging":true,"backup":true,"tags":{"owner":"security","environment":"prod","cost_center":"SEC-100"},"monthly_cost":34.20},
+  {"id":"aws-ec2-web-01","cloud":"AWS","type":"compute","public":true,"encrypted":true,"logging":true,"backup":true,"tags":{"owner":"platform","environment":"prod","cost_center":"PLT-200"},"monthly_cost":92.10},
+  {"id":"azure-vm-ops-01","cloud":"Azure","type":"compute","public":false,"encrypted":true,"logging":true,"backup":true,"tags":{"owner":"cloudops","environment":"prod","cost_center":"OPS-210"},"monthly_cost":117.30},
+  {"id":"gcp-bucket-finance-export","cloud":"GCP","type":"object_storage","public":false,"encrypted":true,"logging":true,"backup":true,"tags":{"owner":"finance","environment":"prod","cost_center":"FIN-330"},"monthly_cost":21.70},
+  {"id":"azure-storage-dev-temp","cloud":"Azure","type":"object_storage","public":false,"encrypted":true,"logging":false,"backup":false,"tags":{"owner":"engineering","environment":"dev"},"monthly_cost":18.40},
+  {"id":"gcp-vm-build-runner","cloud":"GCP","type":"compute","public":false,"encrypted":true,"logging":true,"backup":false,"tags":{"owner":"platform","environment":"dev","cost_center":"PLT-200"},"monthly_cost":68.90}
+]

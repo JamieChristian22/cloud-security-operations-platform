@@ -1,0 +1,89 @@
+{
+  "suite": "Cloud Security & Operations Platform offline validation",
+  "repo": "/mnt/data/cloud-security-operations-platform-complete",
+  "passed": 10,
+  "total": 10,
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "IAM access review",
+      "command": "/opt/pyvenv/bin/python3 /mnt/data/cloud-security-operations-platform-complete/scripts/iam/access_review.py --output /mnt/data/cloud-security-operations-platform-complete/scripts/reports/iam_access_review.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"users_reviewed\": 6,\n  \"findings\": [\n    {\n      \"severity\": \"HIGH\",\n      \"user\": \"derek.contractor\",\n      \"control\": \"MFA\",\n      \"finding\": \"Active account without MFA\",\n      \"remediation\": \"Require MFA before continued access.\"\n    },\n    {\n      \"severity\": \"MEDIUM\",\n      \"user\": \"derek.contractor\",\n      \"control\": \"Dormant account\",\n      \"finding\": \"No login for 74 days\",\n      \"remediation\": \"Confirm business need; disable or remove unused access.\"\n    },\n    {\n      \"severity\": \"HIGH\",\n      \"user\": \"derek.contractor\",\n      \"control\": \"Credential age\",\n      \"finding\": \"Access key age is 101 days\",\n      \"remediation\": \"Rotate the access key and document owner validation.\"\n    }\n  ],\n  \"finding_count\": 3,\n  \"status\": \"REVIEW_REQUIRED\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Cloud security baseline",
+      "command": "/opt/pyvenv/bin/python3 /mnt/data/cloud-security-operations-platform-complete/scripts/security/baseline_audit.py --output /mnt/data/cloud-security-operations-platform-complete/scripts/reports/security_baseline.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"resources_reviewed\": 6,\n  \"findings\": [\n    {\n      \"severity\": \"HIGH\",\n      \"resource\": \"aws-ec2-web-01\",\n      \"control\": \"Public exposure\",\n      \"evidence\": \"public=true\",\n      \"remediation\": \"Remove public exposure unless explicitly required; restrict ingress and document exception.\"\n    },\n    {\n      \"severity\": \"MEDIUM\",\n      \"resource\": \"azure-storage-dev-temp\",\n      \"control\": \"Audit logging\",\n      \"evidence\": \"logging=false\",\n      \"remediation\": \"Enable service and access logging with centralized retention.\"\n    },\n    {\n      \"severity\": \"MEDIUM\",\n      \"resource\": \"azure-storage-dev-temp\",\n      \"control\": \"Recovery\",\n      \"evidence\": \"backup=false\",\n      \"remediation\": \"Enable versioning or backup according to data criticality.\"\n    },\n    {\n      \"severity\": \"LOW\",\n      \"resource\": \"azure-storage-dev-temp\",\n      \"control\": \"Tag governance\",\n      \"evidence\": \"Missing: cost_center\",\n      \"remediation\": \"Apply required ownership, environment, and cost-center tags.\"\n    }\n  ],\n  \"summary\": {\n    \"CRITICAL\": 0,\n    \"HIGH\": 1,\n    \"MEDIUM\": 2,\n    \"LOW\": 1\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Cost governance guardrails",
+      "command": "/opt/pyvenv/bin/python3 /mnt/data/cloud-security-operations-platform-complete/scripts/finops/cost_guardrails.py --output /mnt/data/cloud-security-operations-platform-complete/scripts/reports/cost_guardrails.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"monthly_estimate\": 352.6,\n  \"budget\": 400.0,\n  \"budget_utilization_percent\": 88.2,\n  \"status\": \"OK\",\n  \"findings\": [\n    {\n      \"severity\": \"MEDIUM\",\n      \"resource\": \"azure-vm-ops-01\",\n      \"finding\": \"Monthly cost $117.30 exceeds $100 review threshold\",\n      \"action\": \"Review utilization, sizing, schedules, reservations/commitments, and business owner.\"\n    },\n    {\n      \"severity\": \"LOW\",\n      \"resource\": \"azure-storage-dev-temp\",\n      \"finding\": \"Missing cost_center tag\",\n      \"action\": \"Assign cost-center ownership before production approval.\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Disaster recovery readiness",
+      "command": "/opt/pyvenv/bin/python3 /mnt/data/cloud-security-operations-platform-complete/scripts/dr/readiness_check.py --output /mnt/data/cloud-security-operations-platform-complete/scripts/reports/dr_readiness.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"services_reviewed\": 4,\n  \"findings\": [],\n  \"status\": \"READY\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Support ticket analytics",
+      "command": "/opt/pyvenv/bin/python3 /mnt/data/cloud-security-operations-platform-complete/scripts/operations/ticket_metrics.py --input /mnt/data/cloud-security-operations-platform-complete/02-cloud-support-reliability-center/data/tickets.csv --output /mnt/data/cloud-security-operations-platform-complete/scripts/reports/support_metrics.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"ticket_count\": 40,\n  \"resolved_count\": 40,\n  \"resolution_rate_percent\": 100.0,\n  \"average_resolution_hours\": 1.93,\n  \"sla_attainment_percent\": 100.0,\n  \"severity_distribution\": {\n    \"Unknown\": 40\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Security detection suite",
+      "command": "/opt/pyvenv/bin/python3 /mnt/data/cloud-security-operations-platform-complete/scripts/security/run_detections.py --repo /mnt/data/cloud-security-operations-platform-complete --output /mnt/data/cloud-security-operations-platform-complete/scripts/reports/detection_results.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"overall\": \"PASS\",\n  \"detections\": [\n    {\n      \"script\": \"credential-compromise.py\",\n      \"returncode\": 0,\n      \"status\": \"PASS\",\n      \"stdout\": \"HIGH user=dev-jlee source=203.0.113.77 score=90 reasons=new source, 5 discovery actions, denied probing\",\n      \"stderr\": \"\"\n    },\n    {\n      \"script\": \"password_spray.py\",\n      \"returncode\": 0,\n      \"status\": \"PASS\",\n      \"stdout\": \"[\\n  {\\n    \\\"severity\\\": \\\"high\\\",\\n    \\\"source_ip\\\": \\\"203.0.113.90\\\",\\n    \\\"failed_users\\\": [\\n      \\\"jamie@northstar.example\\\",\\n      \\\"riley@northstar.example\\\",\\n      \\\"sam@northstar.example\\\"\\n    ],\\n    \\\"subsequent_success_users\\\": [\\n      \\\"sam@northstar.example\\\"\\n    ]\\n  }\\n]\",\n      \"stderr\": \"\"\n    },\n    {\n      \"script\": \"impossible_travel.py\",\n      \"returncode\": 0,\n      \"status\": \"PASS\",\n      \"stdout\": \"[\\n  {\\n    \\\"severity\\\": \\\"high\\\",\\n    \\\"user\\\": \\\"alex@northstar.example\\\",\\n    \\\"reason\\\": \\\"country changed within 30 minutes\\\",\\n    \\\"from\\\": \\\"US\\\",\\n    \\\"to\\\": \\\"DE\\\"\\n  }\\n]\",\n      \"stderr\": \"\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "DevSecOps policy gate",
+      "command": "/opt/pyvenv/bin/python3 /mnt/data/cloud-security-operations-platform-complete/05-devsecops-infrastructure-delivery/policy/policy_check.py /mnt/data/cloud-security-operations-platform-complete/05-devsecops-infrastructure-delivery/policy/sample_proposed_change.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "PASS: proposed change satisfies portfolio security gates\n",
+      "stderr": ""
+    },
+    {
+      "name": "CloudGuardian unit tests",
+      "command": "/opt/pyvenv/bin/python3 -m pytest 04-cloudguardian-security-auditor/tests -q",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "......                                                                   [100%]\n6 passed in 0.03s\n",
+      "stderr": ""
+    },
+    {
+      "name": "Automation control tests",
+      "command": "/opt/pyvenv/bin/python3 -m pytest scripts/tests -q",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "....                                                                     [100%]\n4 passed in 0.03s\n",
+      "stderr": ""
+    },
+    {
+      "name": "Portfolio completeness validation",
+      "command": "/opt/pyvenv/bin/python3 /mnt/data/cloud-security-operations-platform-complete/scripts/automation/portfolio_validate.py --repo /mnt/data/cloud-security-operations-platform-complete --output /mnt/data/cloud-security-operations-platform-complete/scripts/reports/portfolio_validation.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"required_items\": 11,\n  \"missing\": [],\n  \"unfinished_markers\": [],\n  \"status\": \"PASS\"\n}\n",
+      "stderr": ""
+    }
+  ]
+}

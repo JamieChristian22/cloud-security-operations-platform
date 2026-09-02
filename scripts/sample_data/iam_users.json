@@ -1,0 +1,8 @@
+[
+  {"user":"alice.admin","department":"CloudOps","role":"CloudAdministrator","privileged":true,"mfa":true,"last_login_days":1,"access_key_age_days":24,"status":"active"},
+  {"user":"ben.reader","department":"Finance","role":"BillingReader","privileged":false,"mfa":true,"last_login_days":6,"access_key_age_days":0,"status":"active"},
+  {"user":"carla.ops","department":"CloudOps","role":"OperationsEngineer","privileged":true,"mfa":true,"last_login_days":3,"access_key_age_days":52,"status":"active"},
+  {"user":"derek.contractor","department":"Engineering","role":"Developer","privileged":false,"mfa":false,"last_login_days":74,"access_key_age_days":101,"status":"active"},
+  {"user":"erin.former","department":"Sales","role":"SupportReader","privileged":false,"mfa":true,"last_login_days":132,"access_key_age_days":0,"status":"disabled"},
+  {"user":"frank.security","department":"Security","role":"SecurityAnalyst","privileged":true,"mfa":true,"last_login_days":2,"access_key_age_days":13,"status":"active"}
+]

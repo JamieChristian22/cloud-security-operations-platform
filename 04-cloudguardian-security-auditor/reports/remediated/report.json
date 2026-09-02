@@ -1,0 +1,10 @@
+{
+  "risk_score": 0,
+  "finding_count": 0,
+  "summary": {
+    "by_severity": {},
+    "by_control": {},
+    "by_provider": {}
+  },
+  "findings": []
+}

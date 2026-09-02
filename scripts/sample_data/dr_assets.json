@@ -1,0 +1,6 @@
+[
+  {"service":"identity-platform","tier":"critical","rto_hours":2,"rpo_hours":1,"backup_enabled":true,"last_backup_hours":3,"restore_test_days":21,"replicated":true},
+  {"service":"security-log-archive","tier":"critical","rto_hours":4,"rpo_hours":1,"backup_enabled":true,"last_backup_hours":2,"restore_test_days":28,"replicated":true},
+  {"service":"support-analytics","tier":"important","rto_hours":8,"rpo_hours":4,"backup_enabled":true,"last_backup_hours":5,"restore_test_days":45,"replicated":false},
+  {"service":"dev-build-runner","tier":"standard","rto_hours":24,"rpo_hours":24,"backup_enabled":false,"last_backup_hours":999,"restore_test_days":999,"replicated":false}
+]

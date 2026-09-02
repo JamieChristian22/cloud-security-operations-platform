@@ -1,0 +1,10 @@
+{
+  "ticket_count": 40,
+  "resolved_count": 40,
+  "resolution_rate_percent": 100.0,
+  "average_resolution_hours": 1.93,
+  "sla_attainment_percent": 100.0,
+  "severity_distribution": {
+    "Unknown": 40
+  }
+}
