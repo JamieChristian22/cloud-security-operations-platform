@@ -1,0 +1,4 @@
+environment        = "dev"
+gcp_project_id     = "replace-with-your-gcp-project-id"
+log_retention_days = 90
+

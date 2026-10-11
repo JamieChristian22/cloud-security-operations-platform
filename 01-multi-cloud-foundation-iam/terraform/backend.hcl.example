@@ -1,0 +1,3 @@
+# Example only. Configure a secure remote backend per organization policy.
+# Never commit backend credentials or live state files.
+
