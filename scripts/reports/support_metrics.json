@@ -1,0 +1,49 @@
+{
+  "scope": "Synthetic ticket fixture; SLA flags are supplied, not independently recomputed",
+  "ticket_count": 40,
+  "resolved_count": 40,
+  "resolution_rate_percent": 100.0,
+  "average_resolution_hours": 1.93,
+  "median_resolution_hours": 1.85,
+  "sla_known_count": 40,
+  "sla_unknown_count": 0,
+  "sla_attainment_percent": 100.0,
+  "priority_distribution": {
+    "P2": 18,
+    "P3": 21,
+    "P4": 1
+  },
+  "category_distribution": {
+    "AWS/IAM": 2,
+    "AWS/Network": 2,
+    "Azure/Identity": 2,
+    "Linux": 4,
+    "DNS": 1,
+    "AWS/S3": 2,
+    "Monitoring": 1,
+    "Azure/VM": 1,
+    "GCP/IAM": 1,
+    "Terraform": 2,
+    "M365": 3,
+    "AWS/Compute": 1,
+    "Security": 3,
+    "Cloud/Cost": 1,
+    "CI/CD": 2,
+    "GCP/Network": 1,
+    "Backup": 2,
+    "Azure/DNS": 1,
+    "AWS/LoadBalancer": 1,
+    "GCP/Storage": 1,
+    "Azure/Monitoring": 1,
+    "AWS/Route53": 1,
+    "Azure/RBAC": 1,
+    "GCP/Compute": 1,
+    "Network": 1,
+    "Cloud/Tagging": 1
+  },
+  "average_resolution_by_priority": {
+    "P2": 2.36,
+    "P3": 1.49,
+    "P4": 3.5
+  }
+}

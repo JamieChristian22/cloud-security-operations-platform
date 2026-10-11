@@ -1,0 +1,1 @@
+{"SecurityGroups":[{"GroupId":"sg-lab-example","Tags":[{"Key":"Owner","Value":"cloud-operations"},{"Key":"Environment","Value":"lab"}],"IpPermissions":[{"IpProtocol":"tcp","FromPort":20,"ToPort":25,"IpRanges":[{"CidrIp":"0.0.0.0/0"}],"Ipv6Ranges":[{"CidrIpv6":"::/0"}]}]}]}

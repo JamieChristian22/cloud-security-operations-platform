@@ -1,0 +1,39 @@
+{
+  "resources_reviewed": 6,
+  "findings": [
+    {
+      "severity": "HIGH",
+      "resource": "aws-ec2-web-01",
+      "control": "Public exposure",
+      "evidence": "public=true",
+      "remediation": "Remove public exposure unless explicitly required; restrict ingress and document exception."
+    },
+    {
+      "severity": "MEDIUM",
+      "resource": "azure-storage-dev-temp",
+      "control": "Audit logging",
+      "evidence": "logging=false",
+      "remediation": "Enable service and access logging with centralized retention."
+    },
+    {
+      "severity": "MEDIUM",
+      "resource": "azure-storage-dev-temp",
+      "control": "Recovery",
+      "evidence": "backup=false",
+      "remediation": "Enable versioning or backup according to data criticality."
+    },
+    {
+      "severity": "LOW",
+      "resource": "azure-storage-dev-temp",
+      "control": "Tag governance",
+      "evidence": "Missing: cost_center",
+      "remediation": "Apply required ownership, environment, and cost-center tags."
+    }
+  ],
+  "summary": {
+    "CRITICAL": 0,
+    "HIGH": 1,
+    "MEDIUM": 2,
+    "LOW": 1
+  }
+}

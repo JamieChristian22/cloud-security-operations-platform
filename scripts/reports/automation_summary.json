@@ -1,0 +1,98 @@
+{
+  "suite": "Cloud Security & Operations Platform offline validation",
+  "repo": ".",
+  "scope": "Synthetic fixtures and software behavior; no live cloud or hosted CI execution",
+  "passed": 11,
+  "total": 11,
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "IAM access review",
+      "command": "python scripts/iam/access_review.py --output scripts/reports/iam_access_review.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"users_reviewed\": 6,\n  \"findings\": [\n    {\n      \"severity\": \"HIGH\",\n      \"user\": \"derek.contractor\",\n      \"control\": \"MFA\",\n      \"finding\": \"Active account without MFA\",\n      \"remediation\": \"Require MFA before continued access.\"\n    },\n    {\n      \"severity\": \"MEDIUM\",\n      \"user\": \"derek.contractor\",\n      \"control\": \"Dormant account\",\n      \"finding\": \"No login for 74 days\",\n      \"remediation\": \"Confirm business need; disable or remove unused access.\"\n    },\n    {\n      \"severity\": \"HIGH\",\n      \"user\": \"derek.contractor\",\n      \"control\": \"Credential age\",\n      \"finding\": \"Access key age is 101 days\",\n      \"remediation\": \"Rotate the access key and document owner validation.\"\n    }\n  ],\n  \"finding_count\": 3,\n  \"status\": \"REVIEW_REQUIRED\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Cloud security baseline",
+      "command": "python scripts/security/baseline_audit.py --output scripts/reports/security_baseline.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"resources_reviewed\": 6,\n  \"findings\": [\n    {\n      \"severity\": \"HIGH\",\n      \"resource\": \"aws-ec2-web-01\",\n      \"control\": \"Public exposure\",\n      \"evidence\": \"public=true\",\n      \"remediation\": \"Remove public exposure unless explicitly required; restrict ingress and document exception.\"\n    },\n    {\n      \"severity\": \"MEDIUM\",\n      \"resource\": \"azure-storage-dev-temp\",\n      \"control\": \"Audit logging\",\n      \"evidence\": \"logging=false\",\n      \"remediation\": \"Enable service and access logging with centralized retention.\"\n    },\n    {\n      \"severity\": \"MEDIUM\",\n      \"resource\": \"azure-storage-dev-temp\",\n      \"control\": \"Recovery\",\n      \"evidence\": \"backup=false\",\n      \"remediation\": \"Enable versioning or backup according to data criticality.\"\n    },\n    {\n      \"severity\": \"LOW\",\n      \"resource\": \"azure-storage-dev-temp\",\n      \"control\": \"Tag governance\",\n      \"evidence\": \"Missing: cost_center\",\n      \"remediation\": \"Apply required ownership, environment, and cost-center tags.\"\n    }\n  ],\n  \"summary\": {\n    \"CRITICAL\": 0,\n    \"HIGH\": 1,\n    \"MEDIUM\": 2,\n    \"LOW\": 1\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Cost governance guardrails",
+      "command": "python scripts/finops/cost_guardrails.py --output scripts/reports/cost_guardrails.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"monthly_estimate\": 352.6,\n  \"budget\": 400.0,\n  \"budget_utilization_percent\": 88.2,\n  \"status\": \"OK\",\n  \"findings\": [\n    {\n      \"severity\": \"MEDIUM\",\n      \"resource\": \"azure-vm-ops-01\",\n      \"finding\": \"Monthly cost $117.30 exceeds $100 review threshold\",\n      \"action\": \"Review utilization, sizing, schedules, reservations/commitments, and business owner.\"\n    },\n    {\n      \"severity\": \"LOW\",\n      \"resource\": \"azure-storage-dev-temp\",\n      \"finding\": \"Missing cost_center tag\",\n      \"action\": \"Assign cost-center ownership before production approval.\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Disaster recovery readiness",
+      "command": "python scripts/dr/readiness_check.py --output scripts/reports/dr_readiness.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"services_reviewed\": 4,\n  \"findings\": [],\n  \"status\": \"READY\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Support ticket analytics",
+      "command": "python scripts/operations/ticket_metrics.py --input 02-cloud-support-reliability-center/data/tickets.csv --output scripts/reports/support_metrics.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"scope\": \"Synthetic ticket fixture; SLA flags are supplied, not independently recomputed\",\n  \"ticket_count\": 40,\n  \"resolved_count\": 40,\n  \"resolution_rate_percent\": 100.0,\n  \"average_resolution_hours\": 1.93,\n  \"median_resolution_hours\": 1.85,\n  \"sla_known_count\": 40,\n  \"sla_unknown_count\": 0,\n  \"sla_attainment_percent\": 100.0,\n  \"priority_distribution\": {\n    \"P2\": 18,\n    \"P3\": 21,\n    \"P4\": 1\n  },\n  \"category_distribution\": {\n    \"AWS/IAM\": 2,\n    \"AWS/Network\": 2,\n    \"Azure/Identity\": 2,\n    \"Linux\": 4,\n    \"DNS\": 1,\n    \"AWS/S3\": 2,\n    \"Monitoring\": 1,\n    \"Azure/VM\": 1,\n    \"GCP/IAM\": 1,\n    \"Terraform\": 2,\n    \"M365\": 3,\n    \"AWS/Compute\": 1,\n    \"Security\": 3,\n    \"Cloud/Cost\": 1,\n    \"CI/CD\": 2,\n    \"GCP/Network\": 1,\n    \"Backup\": 2,\n    \"Azure/DNS\": 1,\n    \"AWS/LoadBalancer\": 1,\n    \"GCP/Storage\": 1,\n    \"Azure/Monitoring\": 1,\n    \"AWS/Route53\": 1,\n    \"Azure/RBAC\": 1,\n    \"GCP/Compute\": 1,\n    \"Network\": 1,\n    \"Cloud/Tagging\": 1\n  },\n  \"average_resolution_by_priority\": {\n    \"P2\": 2.36,\n    \"P3\": 1.49,\n    \"P4\": 3.5\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Security detection suite",
+      "command": "python scripts/security/run_detections.py --repo /workspace/scratch/fbc2f7b663e0/cloud-security-operations-platform --output scripts/reports/detection_results.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"overall\": \"PASS\",\n  \"detections\": [\n    {\n      \"script\": \"credential-compromise.py\",\n      \"returncode\": 0,\n      \"status\": \"PASS\",\n      \"stdout\": \"[\\n  {\\n    \\\"rule_id\\\": \\\"DET-003\\\",\\n    \\\"severity\\\": \\\"medium\\\",\\n    \\\"user\\\": \\\"dev-jlee\\\",\\n    \\\"source_ip\\\": \\\"203.0.113.77\\\",\\n    \\\"actions\\\": [\\n      \\\"GetCallerIdentity\\\",\\n      \\\"ListBuckets\\\",\\n      \\\"ListRoles\\\"\\n    ],\\n    \\\"event_ids\\\": [\\n      \\\"API-002\\\",\\n      \\\"API-003\\\",\\n      \\\"API-004\\\"\\n    ],\\n    \\\"reason\\\": \\\"Burst of distinct discovery APIs; verify approved automation\\\",\\n    \\\"mitre\\\": \\\"T1526\\\"\\n  }\\n]\",\n      \"stderr\": \"\"\n    },\n    {\n      \"script\": \"password_spray.py\",\n      \"returncode\": 0,\n      \"status\": \"PASS\",\n      \"stdout\": \"[\\n  {\\n    \\\"rule_id\\\": \\\"DET-002\\\",\\n    \\\"severity\\\": \\\"high\\\",\\n    \\\"source_ip\\\": \\\"203.0.113.90\\\",\\n    \\\"failed_users\\\": [\\n      \\\"jamie@northstar.example\\\",\\n      \\\"riley@northstar.example\\\",\\n      \\\"sam@northstar.example\\\"\\n    ],\\n    \\\"window_minutes\\\": 10,\\n    \\\"subsequent_success_users\\\": [\\n      \\\"sam@northstar.example\\\"\\n    ],\\n    \\\"event_ids\\\": [\\n      \\\"SIGNIN-003\\\",\\n      \\\"SIGNIN-004\\\",\\n      \\\"SIGNIN-005\\\",\\n      \\\"SIGNIN-006\\\"\\n    ],\\n    \\\"mitre\\\": \\\"T1110.003\\\"\\n  }\\n]\",\n      \"stderr\": \"\"\n    },\n    {\n      \"script\": \"impossible_travel.py\",\n      \"returncode\": 0,\n      \"status\": \"PASS\",\n      \"stdout\": \"[\\n  {\\n    \\\"rule_id\\\": \\\"DET-001\\\",\\n    \\\"severity\\\": \\\"high\\\",\\n    \\\"user\\\": \\\"alex@northstar.example\\\",\\n    \\\"distance_km\\\": 6385.0,\\n    \\\"elapsed_minutes\\\": 18.0,\\n    \\\"speed_kmh\\\": 21283.3,\\n    \\\"reason\\\": \\\"Geographic distance exceeds plausible travel speed\\\",\\n    \\\"event_ids\\\": [\\n      \\\"SIGNIN-001\\\",\\n      \\\"SIGNIN-002\\\"\\n    ],\\n    \\\"mitre\\\": \\\"T1078\\\"\\n  }\\n]\",\n      \"stderr\": \"\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "DevSecOps policy gate",
+      "command": "python 05-devsecops-infrastructure-delivery/policy/policy_check.py 05-devsecops-infrastructure-delivery/policy/sample_proposed_change.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "PASS\n",
+      "stderr": ""
+    },
+    {
+      "name": "Full Python regression suite",
+      "command": "python -m pytest -q --junitxml=evidence/validation/python-junit.xml",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "........................................................................ [ 73%]\n..........................                                               [100%]\n98 passed in 0.41s\n",
+      "stderr": ""
+    },
+    {
+      "name": "CloudGuardian insecure fixture reporting",
+      "command": "python 04-cloudguardian-security-auditor/src/cloudguardian.py --input 04-cloudguardian-security-auditor/sample_data/environment.json --out 04-cloudguardian-security-auditor/reports/generated",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\"findings\": 8, \"risk_score\": 100, \"gate\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "CloudGuardian remediated fixture gate",
+      "command": "python 04-cloudguardian-security-auditor/src/cloudguardian.py --input 04-cloudguardian-security-auditor/sample_data/environment-remediated.json --out 04-cloudguardian-security-auditor/reports/remediated --fail-on high",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\"findings\": 0, \"risk_score\": 0, \"gate\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "Portfolio completeness validation",
+      "command": "python scripts/automation/portfolio_validate.py --repo /workspace/scratch/fbc2f7b663e0/cloud-security-operations-platform --output scripts/reports/portfolio_validation.json",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"required_items\": 11,\n  \"missing\": [],\n  \"broken_local_links\": [],\n  \"status\": \"PASS\"\n}\n",
+      "stderr": ""
+    }
+  ]
+}

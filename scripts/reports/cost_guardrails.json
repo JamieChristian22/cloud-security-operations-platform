@@ -1,0 +1,20 @@
+{
+  "monthly_estimate": 352.6,
+  "budget": 400.0,
+  "budget_utilization_percent": 88.2,
+  "status": "OK",
+  "findings": [
+    {
+      "severity": "MEDIUM",
+      "resource": "azure-vm-ops-01",
+      "finding": "Monthly cost $117.30 exceeds $100 review threshold",
+      "action": "Review utilization, sizing, schedules, reservations/commitments, and business owner."
+    },
+    {
+      "severity": "LOW",
+      "resource": "azure-storage-dev-temp",
+      "finding": "Missing cost_center tag",
+      "action": "Assign cost-center ownership before production approval."
+    }
+  ]
+}

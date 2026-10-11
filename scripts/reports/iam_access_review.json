@@ -1,0 +1,28 @@
+{
+  "users_reviewed": 6,
+  "findings": [
+    {
+      "severity": "HIGH",
+      "user": "derek.contractor",
+      "control": "MFA",
+      "finding": "Active account without MFA",
+      "remediation": "Require MFA before continued access."
+    },
+    {
+      "severity": "MEDIUM",
+      "user": "derek.contractor",
+      "control": "Dormant account",
+      "finding": "No login for 74 days",
+      "remediation": "Confirm business need; disable or remove unused access."
+    },
+    {
+      "severity": "HIGH",
+      "user": "derek.contractor",
+      "control": "Credential age",
+      "finding": "Access key age is 101 days",
+      "remediation": "Rotate the access key and document owner validation."
+    }
+  ],
+  "finding_count": 3,
+  "status": "REVIEW_REQUIRED"
+}

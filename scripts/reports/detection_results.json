@@ -1,0 +1,26 @@
+{
+  "overall": "PASS",
+  "detections": [
+    {
+      "script": "credential-compromise.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "[\n  {\n    \"rule_id\": \"DET-003\",\n    \"severity\": \"medium\",\n    \"user\": \"dev-jlee\",\n    \"source_ip\": \"203.0.113.77\",\n    \"actions\": [\n      \"GetCallerIdentity\",\n      \"ListBuckets\",\n      \"ListRoles\"\n    ],\n    \"event_ids\": [\n      \"API-002\",\n      \"API-003\",\n      \"API-004\"\n    ],\n    \"reason\": \"Burst of distinct discovery APIs; verify approved automation\",\n    \"mitre\": \"T1526\"\n  }\n]",
+      "stderr": ""
+    },
+    {
+      "script": "password_spray.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "[\n  {\n    \"rule_id\": \"DET-002\",\n    \"severity\": \"high\",\n    \"source_ip\": \"203.0.113.90\",\n    \"failed_users\": [\n      \"jamie@northstar.example\",\n      \"riley@northstar.example\",\n      \"sam@northstar.example\"\n    ],\n    \"window_minutes\": 10,\n    \"subsequent_success_users\": [\n      \"sam@northstar.example\"\n    ],\n    \"event_ids\": [\n      \"SIGNIN-003\",\n      \"SIGNIN-004\",\n      \"SIGNIN-005\",\n      \"SIGNIN-006\"\n    ],\n    \"mitre\": \"T1110.003\"\n  }\n]",
+      "stderr": ""
+    },
+    {
+      "script": "impossible_travel.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout": "[\n  {\n    \"rule_id\": \"DET-001\",\n    \"severity\": \"high\",\n    \"user\": \"alex@northstar.example\",\n    \"distance_km\": 6385.0,\n    \"elapsed_minutes\": 18.0,\n    \"speed_kmh\": 21283.3,\n    \"reason\": \"Geographic distance exceeds plausible travel speed\",\n    \"event_ids\": [\n      \"SIGNIN-001\",\n      \"SIGNIN-002\"\n    ],\n    \"mitre\": \"T1078\"\n  }\n]",
+      "stderr": ""
+    }
+  ]
+}
