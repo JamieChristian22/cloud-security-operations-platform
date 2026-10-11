@@ -1,6 +1,0 @@
-{"timestamp":"2026-08-31T09:00:00Z","user":"alex@northstar.example","source_ip":"198.51.100.20","country":"US","minutes_since_previous":0,"result":"success"}
-{"timestamp":"2026-08-31T09:18:00Z","user":"alex@northstar.example","source_ip":"198.51.100.77","country":"DE","minutes_since_previous":18,"result":"success"}
-{"timestamp":"2026-08-31T11:00:00Z","user":"jamie@northstar.example","source_ip":"203.0.113.90","country":"US","minutes_since_previous":0,"result":"failure"}
-{"timestamp":"2026-08-31T11:01:00Z","user":"sam@northstar.example","source_ip":"203.0.113.90","country":"US","minutes_since_previous":0,"result":"failure"}
-{"timestamp":"2026-08-31T11:02:00Z","user":"riley@northstar.example","source_ip":"203.0.113.90","country":"US","minutes_since_previous":0,"result":"failure"}
-{"timestamp":"2026-08-31T11:04:00Z","user":"sam@northstar.example","source_ip":"203.0.113.90","country":"US","minutes_since_previous":3,"result":"success"}

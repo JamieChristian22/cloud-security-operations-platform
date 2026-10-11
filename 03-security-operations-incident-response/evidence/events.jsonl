@@ -1,6 +1,0 @@
-{"ts":"2026-08-20T14:01:00Z","user":"dev-jlee","source":"198.51.100.24","action":"GetObject","resource":"dev-artifacts/readme.txt","result":"Success"}
-{"ts":"2026-08-20T14:08:10Z","user":"dev-jlee","source":"203.0.113.77","action":"GetCallerIdentity","resource":"account","result":"Success"}
-{"ts":"2026-08-20T14:08:32Z","user":"dev-jlee","source":"203.0.113.77","action":"ListBuckets","resource":"account","result":"Success"}
-{"ts":"2026-08-20T14:09:02Z","user":"dev-jlee","source":"203.0.113.77","action":"ListRoles","resource":"account","result":"Denied"}
-{"ts":"2026-08-20T14:09:18Z","user":"dev-jlee","source":"203.0.113.77","action":"DescribeInstances","resource":"region/us-east-1","result":"Success"}
-{"ts":"2026-08-20T14:19:01Z","user":"dev-jlee","source":"203.0.113.77","action":"ListBuckets","resource":"account","result":"Denied"}
