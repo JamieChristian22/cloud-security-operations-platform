@@ -1,7 +1,0 @@
-role,scope,read,write,identity_admin,security_admin,approval_required
-HelpDesk,Workforce Identity,yes,limited,no,no,yes
-CloudOps,Cloud Workloads,yes,yes,no,no,yes
-SecurityAnalyst,Security Logs,yes,no,no,limited,no
-IAMAdmin,Identity Platform,yes,yes,yes,no,yes
-SecurityAdmin,Security Controls,yes,yes,no,yes,yes
-Developer,NonProduction Apps,yes,yes,no,no,yes
