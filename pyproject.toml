@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cloud-security-operations-platform"
+version = "3.0.0"
+description = "Reproducible cloud security and operations portfolio lab"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests", "04-cloudguardian-security-auditor/tests", "scripts/tests"]
+addopts = "-ra"

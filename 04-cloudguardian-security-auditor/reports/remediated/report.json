@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.0",
+  "risk_score": 0,
+  "finding_count": 0,
+  "open_count": 0,
+  "summary": {
+    "by_severity": {},
+    "by_control": {},
+    "by_provider": {},
+    "by_status": {}
+  },
+  "findings": [],
+  "scope": "Supplied normalized inventory only; score is a lab heuristic",
+  "inventory_metadata": {}
+}

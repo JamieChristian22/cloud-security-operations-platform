@@ -1,0 +1,27 @@
+{
+  "storage": [
+    {
+      "name": "audit",
+      "public": false,
+      "encrypted": true
+    }
+  ],
+  "firewall_rules": [
+    {
+      "name": "https",
+      "port": 443,
+      "source": "0.0.0.0/0"
+    }
+  ],
+  "policies": [
+    {
+      "name": "app-read",
+      "actions": [
+        "s3:GetObject"
+      ]
+    }
+  ],
+  "users": [],
+  "keys": [],
+  "resources": []
+}

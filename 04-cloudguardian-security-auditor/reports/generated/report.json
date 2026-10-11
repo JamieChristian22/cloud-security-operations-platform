@@ -1,0 +1,131 @@
+{
+  "schema_version": "2.0",
+  "risk_score": 100,
+  "finding_count": 8,
+  "open_count": 8,
+  "summary": {
+    "by_severity": {
+      "Critical": 3,
+      "High": 4,
+      "Low": 1
+    },
+    "by_control": {
+      "Management exposure": 1,
+      "Least privilege": 1,
+      "Public storage": 1,
+      "Credential age": 1,
+      "MFA": 2,
+      "Dormant account": 1,
+      "Tagging": 1
+    },
+    "by_provider": {
+      "azure": 1,
+      "aws": 2,
+      "gcp": 2,
+      "entra-id": 3
+    },
+    "by_status": {
+      "open": 8
+    }
+  },
+  "findings": [
+    {
+      "id": "15cbcc71b8df59977c35",
+      "control_id": "CG-006",
+      "control": "Management exposure",
+      "severity": "Critical",
+      "provider": "azure",
+      "resource": "legacy-ssh",
+      "evidence": "World exposure 0.0.0.0/0; management ports [22]",
+      "remediation": "Use managed sessions or approved private access.",
+      "status": "open",
+      "mapping": "Educational control mapping; see docs/CONTROL-CATALOG.md"
+    },
+    {
+      "id": "55bcf409f2283a657ec2",
+      "control_id": "CG-004",
+      "control": "Least privilege",
+      "severity": "Critical",
+      "provider": "aws",
+      "resource": "LegacyAdmin",
+      "evidence": "Wildcard actions: *",
+      "remediation": "Replace unrestricted actions with approved task scope.",
+      "status": "open",
+      "mapping": "Educational control mapping; see docs/CONTROL-CATALOG.md"
+    },
+    {
+      "id": "9d12a1c0e2160bfd4e46",
+      "control_id": "CG-005",
+      "control": "Public storage",
+      "severity": "Critical",
+      "provider": "gcp",
+      "resource": "northstar-demo-assets",
+      "evidence": "Public access enabled",
+      "remediation": "Remove public access or obtain a time-limited exception.",
+      "status": "open",
+      "mapping": "Educational control mapping; see docs/CONTROL-CATALOG.md"
+    },
+    {
+      "id": "6102687e4b5fbb6bb739",
+      "control_id": "CG-003",
+      "control": "Credential age",
+      "severity": "High",
+      "provider": "aws",
+      "resource": "AKIA-LAB-001",
+      "evidence": "Active key age: 132 days",
+      "remediation": "Rotate or revoke; prefer short-lived workload identity.",
+      "status": "open",
+      "mapping": "Educational control mapping; see docs/CONTROL-CATALOG.md"
+    },
+    {
+      "id": "76411a78f629c8d4544d",
+      "control_id": "CG-001",
+      "control": "MFA",
+      "severity": "High",
+      "provider": "entra-id",
+      "resource": "u002",
+      "evidence": "Enabled account has MFA disabled",
+      "remediation": "Require workforce MFA and verify registration.",
+      "status": "open",
+      "mapping": "Educational control mapping; see docs/CONTROL-CATALOG.md"
+    },
+    {
+      "id": "96ad359e57f10cf487cf",
+      "control_id": "CG-002",
+      "control": "Dormant account",
+      "severity": "High",
+      "provider": "entra-id",
+      "resource": "u003",
+      "evidence": "Inactive for 61 days",
+      "remediation": "Confirm ownership and disable unneeded identities.",
+      "status": "open",
+      "mapping": "Educational control mapping; see docs/CONTROL-CATALOG.md"
+    },
+    {
+      "id": "b68444e5c2214c1ae8e7",
+      "control_id": "CG-001",
+      "control": "MFA",
+      "severity": "High",
+      "provider": "entra-id",
+      "resource": "u004",
+      "evidence": "Enabled account has MFA disabled",
+      "remediation": "Require workforce MFA and verify registration.",
+      "status": "open",
+      "mapping": "Educational control mapping; see docs/CONTROL-CATALOG.md"
+    },
+    {
+      "id": "02fdcd3ce70bbd504046",
+      "control_id": "CG-007",
+      "control": "Tagging",
+      "severity": "Low",
+      "provider": "gcp",
+      "resource": "vm-002",
+      "evidence": "Missing or empty tags: Owner",
+      "remediation": "Populate Environment and Owner with accountable values.",
+      "status": "open",
+      "mapping": "Educational control mapping; see docs/CONTROL-CATALOG.md"
+    }
+  ],
+  "scope": "Supplied normalized inventory only; score is a lab heuristic",
+  "inventory_metadata": {}
+}

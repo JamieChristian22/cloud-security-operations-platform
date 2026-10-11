@@ -1,0 +1,9 @@
+id,control_id,severity,status,control,provider,resource,evidence,remediation
+15cbcc71b8df59977c35,CG-006,Critical,open,Management exposure,azure,legacy-ssh,World exposure 0.0.0.0/0; management ports [22],Use managed sessions or approved private access.
+55bcf409f2283a657ec2,CG-004,Critical,open,Least privilege,aws,LegacyAdmin,Wildcard actions: *,Replace unrestricted actions with approved task scope.
+9d12a1c0e2160bfd4e46,CG-005,Critical,open,Public storage,gcp,northstar-demo-assets,Public access enabled,Remove public access or obtain a time-limited exception.
+6102687e4b5fbb6bb739,CG-003,High,open,Credential age,aws,AKIA-LAB-001,Active key age: 132 days,Rotate or revoke; prefer short-lived workload identity.
+76411a78f629c8d4544d,CG-001,High,open,MFA,entra-id,u002,Enabled account has MFA disabled,Require workforce MFA and verify registration.
+96ad359e57f10cf487cf,CG-002,High,open,Dormant account,entra-id,u003,Inactive for 61 days,Confirm ownership and disable unneeded identities.
+b68444e5c2214c1ae8e7,CG-001,High,open,MFA,entra-id,u004,Enabled account has MFA disabled,Require workforce MFA and verify registration.
+02fdcd3ce70bbd504046,CG-007,Low,open,Tagging,gcp,vm-002,Missing or empty tags: Owner,Populate Environment and Owner with accountable values.

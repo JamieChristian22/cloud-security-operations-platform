@@ -1,0 +1,6 @@
+{"user": "dev-jlee", "action": "GetObject", "resource": "dev-artifacts/readme.txt", "result": "success", "timestamp": "2026-08-20T14:01:00Z", "source_ip": "198.51.100.24", "event_id": "API-001"}
+{"user": "dev-jlee", "action": "GetCallerIdentity", "resource": "account", "result": "success", "timestamp": "2026-08-20T14:08:10Z", "source_ip": "203.0.113.77", "event_id": "API-002"}
+{"user": "dev-jlee", "action": "ListBuckets", "resource": "account", "result": "success", "timestamp": "2026-08-20T14:08:32Z", "source_ip": "203.0.113.77", "event_id": "API-003"}
+{"user": "dev-jlee", "action": "ListRoles", "resource": "account", "result": "failure", "timestamp": "2026-08-20T14:09:02Z", "source_ip": "203.0.113.77", "event_id": "API-004"}
+{"user": "dev-jlee", "action": "DescribeInstances", "resource": "region/us-east-1", "result": "success", "timestamp": "2026-08-20T14:09:18Z", "source_ip": "203.0.113.77", "event_id": "API-005"}
+{"user": "dev-jlee", "action": "ListBuckets", "resource": "account", "result": "failure", "timestamp": "2026-08-20T14:19:01Z", "source_ip": "203.0.113.77", "event_id": "API-006"}

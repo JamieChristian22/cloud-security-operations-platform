@@ -1,0 +1,7 @@
+timestamp_utc,event_id,user,source_ip,action,result,evidence_class
+2026-08-20T14:01:00Z,API-001,dev-jlee,198.51.100.24,GetObject,success,synthetic fixture
+2026-08-20T14:08:10Z,API-002,dev-jlee,203.0.113.77,GetCallerIdentity,success,synthetic fixture
+2026-08-20T14:08:32Z,API-003,dev-jlee,203.0.113.77,ListBuckets,success,synthetic fixture
+2026-08-20T14:09:02Z,API-004,dev-jlee,203.0.113.77,ListRoles,failure,synthetic fixture
+2026-08-20T14:09:18Z,API-005,dev-jlee,203.0.113.77,DescribeInstances,success,synthetic fixture
+2026-08-20T14:19:01Z,API-006,dev-jlee,203.0.113.77,ListBuckets,failure,synthetic fixture

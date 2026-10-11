@@ -2,6 +2,20 @@
 
 All notable portfolio changes are documented here. Versions describe the evolution of this simulated lab repository, not releases to a production employer environment.
 
+## [3.0.0] - 2026-10-11
+
+- Added missing CI workflow, development requirements, Makefile, evidence index and project index.
+- Added shared strict inventory validation, eight controls, expiring exceptions, safer report exports and expanded regression tests.
+- Rebuilt travel, spray and cloud discovery correlation with chronology and negative-case coverage.
+- Added read-only AWS security-group export/live collection interface and focused Terraform plan policy.
+- Repaired Terraform syntax; added cloud audit delivery, scoped reader roles, KMS and protected storage.
+- Expanded eight operational runbooks and case studies; preserved and labeled 40 synthetic tickets.
+- Aligned IR narrative/timeline to source fixtures and corrected unsupported containment claims.
+- Added architecture diagram, demo guide, data contracts, deployment acceptance and scanner exception register.
+- Recorded executed results and environment-blocked provider/lint stages honestly.
+
+Earlier entries below are inherited historical descriptions, not independent evidence of hosted workflows or deployment. Use the current evidence register for verified scope.
+
 ## [2.2.0] - 2026-08-31
 ### Added
 - Native `terraform test` suites for the root configuration and all three cloud foundation modules.
@@ -34,3 +48,4 @@ All notable portfolio changes are documented here. Versions describe the evoluti
 ### Added
 - Initial five-project Cloud Security & Operations Platform structure.
 - Multi-cloud IAM, support, security operations, automation, and DevSecOps project foundations.
+

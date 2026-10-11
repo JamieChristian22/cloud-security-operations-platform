@@ -7,3 +7,4 @@ This is a personal portfolio, but changes should follow production-inspired disc
 - do not weaken security controls just to make a demo pass;
 - update documentation when behavior changes;
 - preserve least privilege and no-secret-in-repo rules.
+

@@ -1,0 +1,1136 @@
+{
+  "generated_at": "2026-10-11T22:12:54.096679+00:00",
+  "source_revision": "ef0e1524917892710a9f35e779b6c154e40d5576",
+  "files": [
+    {
+      "path": ".github/dependabot.yml",
+      "bytes": 322,
+      "sha256": "ba32cf32de0d313389bff00ff409795d0602e2a66d13daea2d721c304e47a3f3"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "bytes": 563,
+      "sha256": "96e88762bc4c2f9b7278ffaca2757585861aaf566d0ce95b8e69ca6dd98086bb"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 2992,
+      "sha256": "7154333c6d882718219e97eb45039bf82a7836019af72ad29ca4558e86cd3469"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 206,
+      "sha256": "96de61a30345d4590107409d1d5b21e005cb73359fed7f2564a570aae845581e"
+    },
+    {
+      "path": ".tflint.hcl",
+      "bytes": 66,
+      "sha256": "47c7d922abb5f4d1704e291c92964491dc74dae658b9278245a5341aad954b8a"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/README.md",
+      "bytes": 1441,
+      "sha256": "9f7250f4aaee4c5e45a6f8dbeef47475dc5658e6753eeadac9159a69258181b5"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/architecture/multi-cloud-design.md",
+      "bytes": 1531,
+      "sha256": "961ff88498822c5434f3f0cdf51c6ae3e1c85df2914ee2da9febfe652e251016"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/governance/access-review.md",
+      "bytes": 568,
+      "sha256": "73bdfd38475542a58e35dc9e163d7f5dd9284e3ab8caaafcdc2428d7e3b12158"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/governance/control-mapping.md",
+      "bytes": 1056,
+      "sha256": "f389ccd29b6f14bf421d10841d6d9aa26a3c2c657b55a61db86967f7aa7be01f"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/governance/rbac-matrix.csv",
+      "bytes": 359,
+      "sha256": "c1b4a2325249a38ee74f674ed51c93aaa2f14a46f105df368a8935909f632153"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/runbooks/joiner-mover-leaver.md",
+      "bytes": 638,
+      "sha256": "3250775eac60924c3ed96d38a3a3b66cd4a8384d995450286d36b792ec1a9701"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/.terraform.lock.hcl",
+      "bytes": 3562,
+      "sha256": "1ff2d77d941154c061ba0780eea92f848b393b9a27c0be4670544e7c84f9d6bf"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/README.md",
+      "bytes": 1881,
+      "sha256": "2a07c64927807de1a7e2c6913c5c01a73225b059c2aae4626f79e1ab201c299a"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/backend.hcl.example",
+      "bytes": 132,
+      "sha256": "29206dbf27d91d47c9aa3563f936184eeb0230789e507b890bdb393e96ea3398"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/environments/dev/dev.tfvars.example",
+      "bytes": 108,
+      "sha256": "a2a8648e9d10d5c60b5cdba08ab7eac4d0cfb92cfea73d2683069827905c9fba"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/environments/prod/prod.tfvars.example",
+      "bytes": 110,
+      "sha256": "a38364a0f1cba08cbdf03a71005eb2e70387e39646e3d54351bc0281bf378f43"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/main.tf",
+      "bytes": 1596,
+      "sha256": "84fa3e590fd21d5f9a02b9858c04d8faa641864c4fe6de75564a9b6d3431456a"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/aws-foundation/encryption.tf",
+      "bytes": 2513,
+      "sha256": "32df11abd4139fcce488e8ddda7a5a541f7fe19d55f804f9023cc989b34d2a4e"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/aws-foundation/iam.tf",
+      "bytes": 1401,
+      "sha256": "c17d0aa6cde6de7b39597641f109895957ebd316ba5490e07e23f357240cf003"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/aws-foundation/logging.tf",
+      "bytes": 3456,
+      "sha256": "061999c37884fea71744e41281a549dacae2b42c4944cf0cd8e491f2de20fd21"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/aws-foundation/main.tf",
+      "bytes": 2666,
+      "sha256": "7805d792aaac3cb3b3f5a82b8973c13b8132f6158c255006c1e9975294279b69"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/aws-foundation/outputs.tf",
+      "bytes": 205,
+      "sha256": "8ffca33d9935019b6a438b2535391d1ca8ff82389770e2250b1bca9695502c79"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/aws-foundation/tests/security.tftest.hcl",
+      "bytes": 2066,
+      "sha256": "277f36bed893ca12e0bccc1bff31a4f56a3858942e50e21aeff17d53e2f6da7c"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/aws-foundation/variables.tf",
+      "bytes": 469,
+      "sha256": "3bee38447a27d26f84effbd399d3e79d5a2460f6a5c2db99804d8a4a317dded7"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/aws-foundation/versions.tf",
+      "bytes": 142,
+      "sha256": "0d3723ce7c90436ba7cdd004d8a4e70b4f715fa49f519efb8e3d08e723aa4ef8"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/azure-foundation/logging-iam.tf",
+      "bytes": 1188,
+      "sha256": "2edd261885a08518db7213972f54a68644861a487783e7a9a769f1377331945d"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/azure-foundation/main.tf",
+      "bytes": 1837,
+      "sha256": "83c90859141b8f38cc62c9025fadf3688d46d26dd009ecd2763aeb6f20379422"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/azure-foundation/outputs.tf",
+      "bytes": 230,
+      "sha256": "5ffcf9bad55f0fde96853c5f6cb8454243940ec900e0ede2ff59d94e8280a204"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/azure-foundation/tests/security.tftest.hcl",
+      "bytes": 1435,
+      "sha256": "3fa334f9f3988cd913c0be7da97e9f4189e48e0f36af2bab3144c39201e06f73"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/azure-foundation/variables.tf",
+      "bytes": 448,
+      "sha256": "f6f09e88f5b7ee571e260be096fd677681ad3935c9391baa9acaf2aca2cc65fa"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/azure-foundation/versions.tf",
+      "bytes": 149,
+      "sha256": "385d2cb7a117cf2e3b519508a0211076e1730f4edf53a4676bbfc7b916b6f31f"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/gcp-foundation/logging-iam.tf",
+      "bytes": 1214,
+      "sha256": "a2aeabefb75b0c422f7055db478c490a98cb9239dcfb3f54aa3ec89ed00b1a34"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/gcp-foundation/main.tf",
+      "bytes": 2239,
+      "sha256": "044216e81dca9feb4c9d14ca56ba58b6cb21998bb663a3ad7e7c0265c5ac9bb1"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/gcp-foundation/outputs.tf",
+      "bytes": 209,
+      "sha256": "09142aac33dee63b7891667cab8632574e1c4fb2cc1d952bcb0a1d0f49738e85"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/gcp-foundation/tests/security.tftest.hcl",
+      "bytes": 1717,
+      "sha256": "a2078e5a1436a33c00ab61f5278e2253b551a4d8603de04a188db443885a84d3"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/gcp-foundation/variables.tf",
+      "bytes": 388,
+      "sha256": "0f055cd081fdbbf0d9c2d6907af8c2c5feb8ae9d7273b58e0ac24b5fca6e3e3f"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/modules/gcp-foundation/versions.tf",
+      "bytes": 147,
+      "sha256": "79d62969e1e463f08802b1025b9b1509f1807f8d689315820a3d3f87407caa59"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/outputs.tf",
+      "bytes": 644,
+      "sha256": "ba59e6e061f54fb39e230dd4611899c687e73a5500b11d53ef31e42e0aaa5726"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/tests/README.md",
+      "bytes": 1368,
+      "sha256": "a0b9b469f4f2633a19019515b10d5086c619b0d7679440de9176f637c878b90f"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/tests/root.tftest.hcl",
+      "bytes": 1931,
+      "sha256": "d20313e56cb938f50f02dbddeadecbb12f9e153df6000193b9792b8758c5f1c1"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/variables.tf",
+      "bytes": 1335,
+      "sha256": "89f5f6aae4931d4eebe06a2e39d03afbd46e6dcd39c1a0daa2f3f5425d69e333"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/terraform/versions.tf",
+      "bytes": 496,
+      "sha256": "0e3c52c296908729d90ac168a3350265715bdb99e7906a990a0067d782cb6a12"
+    },
+    {
+      "path": "01-multi-cloud-foundation-iam/validation/security-checklist.md",
+      "bytes": 550,
+      "sha256": "58ecabcc2871330ab33dd090c4d5ef4ed8d9970fd24889768c48f712ea879b4a"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/RCA-TRENDS.md",
+      "bytes": 1095,
+      "sha256": "5190283ee535fb5b879dbc964194542c80eb3b241b1db42e7246e7bac45bb066"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/README.md",
+      "bytes": 1280,
+      "sha256": "96ceab7ef32b28ebb93a3a0aa1ccd89291a9f397712a161143713ed15a80ebec"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/case-studies/01-iam-access-denied.md",
+      "bytes": 3308,
+      "sha256": "28f98189514827687a658ccae5676216c5b73e8f4f831ca819e34a920f197e31"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/case-studies/02-private-service-unreachable.md",
+      "bytes": 3289,
+      "sha256": "5aa70c2af463c54004b7e2156ff46d02f3cd5a8b6d25bfcc9a3883652584e164"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/case-studies/03-identity-signin.md",
+      "bytes": 3243,
+      "sha256": "f7a7003f892529b9981327e6e6181dc9df8cd3bb6fafd0cbe882a5d734b5316d"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/case-studies/04-linux-disk.md",
+      "bytes": 3178,
+      "sha256": "5fc328a0a256d677e76a804f449616a852e2e2375ae4c93e18dff634504e1435"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/case-studies/05-private-dns.md",
+      "bytes": 3262,
+      "sha256": "0e95a7b8353be1a27b43985d713fe3683ef814d508d9fea8c04b247fd406f43a"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/case-studies/06-monitoring-gap.md",
+      "bytes": 3264,
+      "sha256": "3c2335bb3713f055fddbc64bc1d7f62f4f2e90cddef74ecd5f03497dda096987"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/case-studies/07-backup-restore.md",
+      "bytes": 3337,
+      "sha256": "21028a3e4a6fd02ab8c72cfc9302970f1b37a32e3a3bd8a399c65698bd64f3dd"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/case-studies/08-policy-block.md",
+      "bytes": 3292,
+      "sha256": "dd8f58268006ed630df06ad4c331de81f3f354155c4adb407e50ea3cc316bb75"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/data/tickets.csv",
+      "bytes": 6031,
+      "sha256": "ecef3c4298e80571da89accb75551df04081d665b48f1766dc02607611135461"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/runbooks/backup-restore-validation.md",
+      "bytes": 2448,
+      "sha256": "92050b0209729ecf722d48b6837df93bec54d7935b22ac2e1925a732ed23bac7"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/runbooks/cicd-failure.md",
+      "bytes": 2427,
+      "sha256": "ef81027e0ba9aa1c7f699ea8e4c089659f18a73efbadc13417f3eb0c0d543257"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/runbooks/cloud-monitoring-alert.md",
+      "bytes": 2398,
+      "sha256": "b975dc63dfbca5452746db586f2c5ee127c2c5de21087f42afaa3df0009f3de1"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/runbooks/dns-resolution-failure.md",
+      "bytes": 2362,
+      "sha256": "989b09f8ba9dfdedc90268ce507d50d4b2bf4396f74f9f3942d79cc5996cb6a4"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/runbooks/iam-access-denied.md",
+      "bytes": 2426,
+      "sha256": "443280fc8ef1b291948a344e5817ac064d996bfce6796a8223cffd7dbbc8fc0b"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/runbooks/linux-disk-pressure.md",
+      "bytes": 2311,
+      "sha256": "cbc82d28455463d7b2e0cad4c9cb337927101fb325fa080aa6d0c3ebce6feee8"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/runbooks/m365-signin.md",
+      "bytes": 2407,
+      "sha256": "f6a2462b9123b68897508e4382bbcd865fc6de1698facb746e6c3d67e702d080"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/runbooks/unreachable-service.md",
+      "bytes": 2419,
+      "sha256": "ebefe5a544e68873a64b7aada71b351705d20a1a7b0fab12726726fa7ada4100"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/scripts/ticket_metrics.py",
+      "bytes": 399,
+      "sha256": "5ae217497f73c6378047cb489946c15675c003539157f1459967cc48e810ee5e"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-001.md",
+      "bytes": 2286,
+      "sha256": "2692fce98b40f75c82649e4c529d7b29fc652203cc50be5a70ae627cf77b49a2"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-002.md",
+      "bytes": 2282,
+      "sha256": "1a6d1122238eb38b0bf8df383f98a45744a344c4909601664fbfbea31e08516e"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-003.md",
+      "bytes": 2286,
+      "sha256": "977b0a6c97c2302c356ccb451101b2335f711aa3d9cfa1fdd1ee8e24b6d9d823"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-004.md",
+      "bytes": 2255,
+      "sha256": "c06afbf6d6dfec5d2df0aa898dfb815b9a7b00949f91b21647f65848e749f99a"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-005.md",
+      "bytes": 2252,
+      "sha256": "946eb0d3b0925a3b4b8eecd0bb9d105bf85b695de70b0f8b90cb07e9bff17295"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-006.md",
+      "bytes": 2264,
+      "sha256": "698d9d0933469e77669209a0de384763fe2e63b776a86983bf9e323331c04516"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-007.md",
+      "bytes": 2260,
+      "sha256": "83f543864d6e2b012cc50a728000ebed70a7ae891f2673f0677dc06582ec6505"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-008.md",
+      "bytes": 2264,
+      "sha256": "b99fa899666aac52654c9b93524f27c7efc4a72e4e8df5816b8b2c095522c656"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-009.md",
+      "bytes": 2266,
+      "sha256": "b3c4b258053b5c7dc77b6ed171ccfbb3af7321a7712bb10304e1f94556317d63"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-010.md",
+      "bytes": 2248,
+      "sha256": "19ea4fcfc47686f98caeaed336bfbb72efecebe2877ba90f57713da2b15e8e62"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-011.md",
+      "bytes": 2256,
+      "sha256": "9f28416e7f6c434f2c3d1e99bfb87abed359b77c53d1b2e18d44933886622f2f"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-012.md",
+      "bytes": 2276,
+      "sha256": "6ec34cf18409896d66dde4e101c6d6d1bc4aca5955028ca95a1d522bb3defca9"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-013.md",
+      "bytes": 2248,
+      "sha256": "3158ede2f7dc265dbb63cbcef81d77be5237659f8eb878382ec92b10337e67af"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-014.md",
+      "bytes": 2274,
+      "sha256": "fd6480b2e11101afd1191d31dccad4eeab0254abf8abcc37e1d8b83332419175"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-015.md",
+      "bytes": 2270,
+      "sha256": "3cfac8c4f2c401bd3242c9b186375df0e2f2bf162bf603e0857dcfc477b9613a"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-016.md",
+      "bytes": 2254,
+      "sha256": "f55bcbf4d5762bfb746f7b160747573e5848184f17b8261409b101c4ead2a2a5"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-017.md",
+      "bytes": 2274,
+      "sha256": "0143edb847609a62e25ab9459c48c32f46f1bc970f163a3cf8a96e252e9e284e"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-018.md",
+      "bytes": 2237,
+      "sha256": "dcce6227b6f9e4c978f12fa85bb392e14d5d545c86bc9d1b2abc8937e594fa39"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-019.md",
+      "bytes": 2265,
+      "sha256": "3b2b0a12921d6d411b460b6dd2f8bc490b5f6dedd89c021ab98c1f667927dd7e"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-020.md",
+      "bytes": 2255,
+      "sha256": "0a2c65bbf76b95878e0863e9b8904b9138d07b54195911b4c6ef9c2f45e8fc46"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-021.md",
+      "bytes": 2263,
+      "sha256": "e554e274a0b0c6bcb0536eb143c80964c9f3170ea89007a5e714e9650c45236f"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-022.md",
+      "bytes": 2297,
+      "sha256": "75055a86219c77f972f07e454fb47250a93fcf6b4f42f664ea459fc7950a7838"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-023.md",
+      "bytes": 2285,
+      "sha256": "f03b6bd0ce1ccaeb626e2219793b284f95ebe72a4c9b8571927da636b71f6ebb"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-024.md",
+      "bytes": 2277,
+      "sha256": "4c44d5c25cee0f92537f0004ba716a26d46aee1ee2033b9a9826baa5cb2b07dc"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-025.md",
+      "bytes": 2269,
+      "sha256": "74a184cca495412f03db4744e1c3770ef31b365cf0652c2768982e1365ccff5f"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-026.md",
+      "bytes": 2278,
+      "sha256": "9ad4f6bf314b3c58b18726545a77770ed0be1ef27adef10aef02272487f19ce9"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-027.md",
+      "bytes": 2303,
+      "sha256": "38d7a2b2b377ccc3df81293913de377b727fa798abec8d431bd566101220f613"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-028.md",
+      "bytes": 2284,
+      "sha256": "2c950073c9c88b745311afca500a1e0e5ab184c4087d49ee70b09435a158c56d"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-029.md",
+      "bytes": 2292,
+      "sha256": "c7d212d57b091e757b930b1c69246c03b2c3deeace32a1be14ccdfe9e973da08"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-030.md",
+      "bytes": 2275,
+      "sha256": "13d338eb23e68a8f3d17e1c97ecac44e1d4378bb094a9d62c4133df4a843dc3f"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-031.md",
+      "bytes": 2295,
+      "sha256": "b430d142b752b7c8b410656c9416a19fd832d0744c4cd5a7b84472dff63ca502"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-032.md",
+      "bytes": 2293,
+      "sha256": "8b20829d146f4cc87263ab01e09c1146906c9af8f39465aa4231cde41eebf84b"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-033.md",
+      "bytes": 2276,
+      "sha256": "60205375760fae67f8110cb4d676884545e81be723b0c5b8d088b4133730b244"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-034.md",
+      "bytes": 2293,
+      "sha256": "ef9d27760e9a6eac4de656f2349ad4991635a7729582092d9669d208836250c2"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-035.md",
+      "bytes": 2285,
+      "sha256": "e465833b685fa3b75d52828513ff0a18b8351a9b8ca0606744288d464d282f35"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-036.md",
+      "bytes": 2288,
+      "sha256": "6a16e7d78deaf6a385dadafe5465fa9cb74b8bf815427c6258a2f78ac1142583"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-037.md",
+      "bytes": 2300,
+      "sha256": "d9cc3cb25194cc32b9da8c066212f7574e5fa8e91d4dd0020aedbf14d79cfc63"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-038.md",
+      "bytes": 2282,
+      "sha256": "b52f9183ac7e8a0b1e8894b6d11c2f60f45c6b56a5594503ea1ad0ab4dbdd95d"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-039.md",
+      "bytes": 2333,
+      "sha256": "09609d708cf84ee36477f6b827b96e40fddba1c81e2ee46902e74da14b210e81"
+    },
+    {
+      "path": "02-cloud-support-reliability-center/tickets/INC-040.md",
+      "bytes": 2291,
+      "sha256": "8b01ecc32ff787d230cee62fd2d813315610f9d8756bf7279cdfe806b61b5eea"
+    },
+    {
+      "path": "03-security-operations-incident-response/IOC-REGISTER.md",
+      "bytes": 861,
+      "sha256": "d7fee51c32c28b7c9e6b31c60f4bb041b4c9756acf98cae7403252bc89c17f1e"
+    },
+    {
+      "path": "03-security-operations-incident-response/LESSONS-LEARNED.md",
+      "bytes": 716,
+      "sha256": "7a03975ed36bc446118e97866d82ebbdf45ddcac03091582b6effd57a3aa1d69"
+    },
+    {
+      "path": "03-security-operations-incident-response/README.md",
+      "bytes": 1244,
+      "sha256": "d3ed61b73479d49f4e1aa4730886066afc19baa2eb211b0859771873cdc7d83d"
+    },
+    {
+      "path": "03-security-operations-incident-response/detections/credential-compromise.py",
+      "bytes": 799,
+      "sha256": "32fd61c72f0d712a967db50aa87c403f7f31adf4809a113d9d2811c6f9156271"
+    },
+    {
+      "path": "03-security-operations-incident-response/detections/impossible_travel.py",
+      "bytes": 808,
+      "sha256": "7960477c017eb6b8ab980814f323b009d95a1a5ed1fafb89e875c3ab0a74cc7d"
+    },
+    {
+      "path": "03-security-operations-incident-response/detections/password_spray.py",
+      "bytes": 802,
+      "sha256": "5fb191b3d15db0a260481ce8b5305be31a940c47087373e6d5385792b436d076"
+    },
+    {
+      "path": "03-security-operations-incident-response/evidence/events.jsonl",
+      "bytes": 1109,
+      "sha256": "134f0e81fa586dd01e48413fb6746b102aea7a88d58bdcb75ba2dabcab683552"
+    },
+    {
+      "path": "03-security-operations-incident-response/evidence/signin_events.jsonl",
+      "bytes": 1247,
+      "sha256": "ef6206bcb5eb69cd97703f52dc042abd6a238a3753938319aada6b28d60c5e6e"
+    },
+    {
+      "path": "03-security-operations-incident-response/playbooks/compromised-cloud-credential.md",
+      "bytes": 2157,
+      "sha256": "626c1921f777e10c346186c169eb775cc3f2589dda77ae3f2a97c33d45c07594"
+    },
+    {
+      "path": "03-security-operations-incident-response/post-incident-report.md",
+      "bytes": 2753,
+      "sha256": "b96437b4afc76ab1dc8dddf4103a8305a0b12bc90af9281f627e849b2fd320c2"
+    },
+    {
+      "path": "03-security-operations-incident-response/siem/README.md",
+      "bytes": 670,
+      "sha256": "48028f422ccd5c03a9b9c0aaa521dcc469169de20c9cf2f501d98e5525ac8bd7"
+    },
+    {
+      "path": "03-security-operations-incident-response/siem/password-spray.kql",
+      "bytes": 1016,
+      "sha256": "7e0ab19c848a8dc8e872a638a3b1f6ad931ad7735735da8eaf90a09c467a8ca2"
+    },
+    {
+      "path": "03-security-operations-incident-response/siem/password-spray.spl",
+      "bytes": 266,
+      "sha256": "241e234d0fda607bc7ba8bcd8bffe152bdab616b0a761563337c80bce60adcf4"
+    },
+    {
+      "path": "03-security-operations-incident-response/timeline.csv",
+      "bytes": 617,
+      "sha256": "f278d57729b36dce636b69f425c68ec4711b723194a745f56784267e6c2787e0"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/README.md",
+      "bytes": 1285,
+      "sha256": "fba22a142027796f360e72ca0e19ca6b7e3ee1507f77b3c9f45efa24e8c39c54"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/REMEDIATION-WALKTHROUGH.md",
+      "bytes": 1327,
+      "sha256": "c75c933c5a08756ac2ffefc7cfe5d75b56861b647207c5c196193f9930d844e6"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/reports/cloudguardian-dashboard.svg",
+      "bytes": 2152,
+      "sha256": "a46fe145756e5543be5a376f4d3c493057ae77f848ac1181b1a8a0fc0ef79a73"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/reports/generated/report.csv",
+      "bytes": 1277,
+      "sha256": "9137e640112c73b8ec2802ca44943de6e94aea337ad1fb86f0e21770fb31ce79"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/reports/generated/report.html",
+      "bytes": 3002,
+      "sha256": "7dd5c50272ce18139576e30475e7b4b99c1f898eb44b03c5f538e3a67b072aec"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/reports/generated/report.json",
+      "bytes": 4042,
+      "sha256": "82a4bbdf3c0f3ccd634e204b6e98e174740c93ac11cf29b08d89ceb6dfa10563"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/reports/remediated/report.csv",
+      "bytes": 78,
+      "sha256": "b0670302e9746458d2cb0c9869898b9aed32d04f736cfcc7815ec831169f80f9"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/reports/remediated/report.html",
+      "bytes": 1161,
+      "sha256": "4c66488fa87b37dd0666e7d38f95bb20e155a96b716bc6d49271a03c0aec25bf"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/reports/remediated/report.json",
+      "bytes": 319,
+      "sha256": "9a55a09147eb0d04853e4eb871c27c07730ce4b27d616af0b65d718ea4bcf1c0"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/sample_data/environment-remediated.json",
+      "bytes": 2158,
+      "sha256": "b1fb526be3785d2132c78cb8b31764797a5f20e6a26f4e7e8d384d235b2b5d95"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/sample_data/environment.json",
+      "bytes": 2089,
+      "sha256": "f5bda1105413f1e2e3751ab77d72cacf84394dcf776dd3b123a3c2812045139e"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/sample_data/exceptions.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/src/cloudguardian.py",
+      "bytes": 3776,
+      "sha256": "818feb1042bd58293f040f2b8763764da1ab5369a6a3fe4056fd9797a5d4d34d"
+    },
+    {
+      "path": "04-cloudguardian-security-auditor/tests/test_cloudguardian.py",
+      "bytes": 1251,
+      "sha256": "2af660a1672fc142b8dc7154d1de647420a4927b8a4d5f96242350159ba05899"
+    },
+    {
+      "path": "05-devsecops-infrastructure-delivery/README.md",
+      "bytes": 1313,
+      "sha256": "c4107f00dcb125a3905deae676e58e0ffdb31abf45e6308a38dd504b60bc1fb5"
+    },
+    {
+      "path": "05-devsecops-infrastructure-delivery/changes/CHG-2026-017.md",
+      "bytes": 1235,
+      "sha256": "0e556d740ba7def4a95c68a623c1eeb2edc71367949d8558a164c3d4252afda6"
+    },
+    {
+      "path": "05-devsecops-infrastructure-delivery/docs/iac-review-checklist.md",
+      "bytes": 757,
+      "sha256": "c10d92033cb181808eec4d1d224e64d2148a788472ff3703fa94bbe6a6607b55"
+    },
+    {
+      "path": "05-devsecops-infrastructure-delivery/docs/pull-request-template.md",
+      "bytes": 442,
+      "sha256": "9e9a86a3899f91b38dbf0e63164bb0b6a75d6f396252f6d066e94fda52ebb56c"
+    },
+    {
+      "path": "05-devsecops-infrastructure-delivery/docs/release-checklist.md",
+      "bytes": 931,
+      "sha256": "65220083d9f7760e1f150b2c3939f65065c6d2dc468a5e0aa42d80525e0e4bbc"
+    },
+    {
+      "path": "05-devsecops-infrastructure-delivery/docs/rollback-plan.md",
+      "bytes": 1140,
+      "sha256": "aa4c6e63310d8884b5208b740bb95509df93bb851b550ebd7b0dc6b058f891ff"
+    },
+    {
+      "path": "05-devsecops-infrastructure-delivery/docs/terraform-operating-model.md",
+      "bytes": 1424,
+      "sha256": "5bf83639ad7e9e250332d36069acac0f252c60eafb1ecd16e86f899b826ad3e3"
+    },
+    {
+      "path": "05-devsecops-infrastructure-delivery/policy/policy_check.py",
+      "bytes": 631,
+      "sha256": "3aa5ee2cf5bb519cade46f8197ad7d487bde6a5ed08fcffa195e5ae08485a69f"
+    },
+    {
+      "path": "05-devsecops-infrastructure-delivery/policy/sample_proposed_change.json",
+      "bytes": 371,
+      "sha256": "bccc4bf1ff70f34c472351bca23d42b3e26bd2702c43158245e1778d6022b5e4"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 3346,
+      "sha256": "10d1a56a9cb4ecf66d437ef17793a5c677d8f13b1eef1c945b82116677c0fdcc"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 429,
+      "sha256": "492542b6dae906029581131c5e79d16d0cfeca3e5cb7118abb227562240a0ca3"
+    },
+    {
+      "path": "EXECUTIVE-CASE-STUDY.md",
+      "bytes": 2482,
+      "sha256": "6e1554f33b512a87199eea9b4bd62e1f147ddff49a33fcb80d44d1fdb70c0b3d"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 610,
+      "sha256": "664f247c6d83ae49056cc80b72814a6571cea178818172dc95f8bcb85e5aed13"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 1188,
+      "sha256": "05144263549952634fb30b1a8d4828ff2c0b8c56549cf157ee1c87cf216b85e2"
+    },
+    {
+      "path": "PORTFOLIO-EVIDENCE.md",
+      "bytes": 2131,
+      "sha256": "349094650547393377696037fc5e30d2343e87f795bdb840836d3ff43e2a2595"
+    },
+    {
+      "path": "PROJECT-INDEX.md",
+      "bytes": 1146,
+      "sha256": "4a9559e54b6d616f06d880f899ce9a7dcc3562bf1bc6b32bfe10a19a7b8f2738"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5789,
+      "sha256": "9a9e2f9fa7f1d2cd973d6141a24961dd2b228e028971fd4e8b90f16e1d4d5168"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 796,
+      "sha256": "3ca147fd55dede34ad1b624d861c4eae8227f70fdd83f088c954969c35b8efe5"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 580,
+      "sha256": "ca6ebcb20f3831a4be12933d420730ff040018562c41a559e2e3b8a00161caa4"
+    },
+    {
+      "path": "UPLOAD-TO-GITHUB.md",
+      "bytes": 1297,
+      "sha256": "46b3d973d3de32eb66e5843d8f79f022221e0209e3ad82164777ea7bc60a1d90"
+    },
+    {
+      "path": "docs/AUTOMATION-CONTROLS.md",
+      "bytes": 1515,
+      "sha256": "f40f0b754c59338d5bd7beb1fec420e1ffad3518104cbd9e9d0309c7eda35a60"
+    },
+    {
+      "path": "docs/CONTROL-CATALOG.md",
+      "bytes": 2723,
+      "sha256": "f9274cf90691284b68b2b14f50812a3687dfc66953a85acdf23e4567ff64af9c"
+    },
+    {
+      "path": "docs/COST-GOVERNANCE.md",
+      "bytes": 5577,
+      "sha256": "df44bb17d3851b20d4244dc2284c2fb75c8613ceabdc0ac93ebd57244415f027"
+    },
+    {
+      "path": "docs/DATA-CONTRACTS.md",
+      "bytes": 3322,
+      "sha256": "2a15ac042efa4f34e8e02986d3205df7fc4a05c2332e9d4c2ae64bd413d69d78"
+    },
+    {
+      "path": "docs/DEMO-GUIDE.md",
+      "bytes": 2257,
+      "sha256": "6507cc6ce5e3104ecc53b844789fc0cfdb2f34edef71a919fbef8705e22ec393"
+    },
+    {
+      "path": "docs/DEPLOYMENT-GUIDE.md",
+      "bytes": 4751,
+      "sha256": "e4a95bb5ea50b561b3360c398dec2782ffbe946deddfbb30845a9ce4f6f4e21d"
+    },
+    {
+      "path": "docs/DETECTION-ENGINEERING.md",
+      "bytes": 3354,
+      "sha256": "16b9a8929f01af09fc1184ab988304c68d6162659b4ebb3e4fc099491d18ac2e"
+    },
+    {
+      "path": "docs/DISASTER-RECOVERY.md",
+      "bytes": 7990,
+      "sha256": "c8c67173e5633aa914a4e351a56712afa7210c4853a6690c306039a2450fc3da"
+    },
+    {
+      "path": "docs/GAP-CLOSURE.md",
+      "bytes": 2585,
+      "sha256": "895de1c7430a3e84fd3548a51e4ff79a850e0540858f666b6bbbba0823392844"
+    },
+    {
+      "path": "docs/OPERATIONS-STANDARD.md",
+      "bytes": 2142,
+      "sha256": "63fd0ec2606a0e4c3503fe4bb189ace7f6480bd287b2cd35161f2e15085ad160"
+    },
+    {
+      "path": "docs/REPOSITORY-GUIDE.md",
+      "bytes": 969,
+      "sha256": "a569e9d7494278d90fa865b65865dca85aa0233cf97aea29c1a1175668eb5eff"
+    },
+    {
+      "path": "docs/SCANNER-EXCEPTIONS.md",
+      "bytes": 1946,
+      "sha256": "0bbaa5a024078c58b6c76acb10da8e3299a1f60ed9d2b326bf6ca530b1e86c00"
+    },
+    {
+      "path": "docs/TEST-STRATEGY.md",
+      "bytes": 2430,
+      "sha256": "6b6a949ccae65596c5ffb845fc36fbc1323aaf1398be3f766a9f0a63ddf7eba6"
+    },
+    {
+      "path": "docs/THREAT-MODEL.md",
+      "bytes": 10260,
+      "sha256": "aeb3ffcf51ae1cefbaaf468176f05f016b4656a5714034486dced1a4103bea5e"
+    },
+    {
+      "path": "docs/architecture-decisions.md",
+      "bytes": 2091,
+      "sha256": "00bb87936b076ac0dfa6a4881b6f2b9004e50dfdfec99ce6fa760a349a18bf1f"
+    },
+    {
+      "path": "docs/assets/architecture.svg",
+      "bytes": 9418,
+      "sha256": "56ca0a2f6fc2a16b3556a81c37839e59896152d23b792239c5d6e4012f27b0cd"
+    },
+    {
+      "path": "docs/recruiter-quickstart.md",
+      "bytes": 641,
+      "sha256": "339063a4a1f47bf461b2acfaaa694194758a862f03d3595528357f0e3c186850"
+    },
+    {
+      "path": "evidence/validation/README.md",
+      "bytes": 1818,
+      "sha256": "9e5c81f3c5cdf3f177ef15bc8e0941f5165285e4ebad024668edfbaebc4d01ad"
+    },
+    {
+      "path": "evidence/validation/checkov.json",
+      "bytes": 576639,
+      "sha256": "7b81b5f75fdf535a774cddf071c55c6997571475d1c3070c4644743deb621fc5"
+    },
+    {
+      "path": "evidence/validation/command-results.json",
+      "bytes": 1832,
+      "sha256": "1b549b47e9f18b870c993ab8b523d63a662c43ca0b1d0a63d4dd387ba35f7cf5"
+    },
+    {
+      "path": "evidence/validation/gitleaks.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "evidence/validation/gitleaks.txt",
+      "bytes": 146,
+      "sha256": "0211f178d0e3b37b3d6ca9a765395933b2f6b44ea5617e73a3e4fb9c70369b9a"
+    },
+    {
+      "path": "evidence/validation/offline.txt",
+      "bytes": 637,
+      "sha256": "f03a98290ad4ce7fbf77821df5646f39a258176be6b5c9c2e62cb1fd91aef726"
+    },
+    {
+      "path": "evidence/validation/python-junit.xml",
+      "bytes": 10534,
+      "sha256": "5854b9e80f86c36dad142884954e8e4e0b196ad7f5ffc95462aaff772ab323e2"
+    },
+    {
+      "path": "evidence/validation/terraform-environment.txt",
+      "bytes": 748,
+      "sha256": "ba2578d7d10747033d38bf9e4673343df265d330b6c24731947719678216b94b"
+    },
+    {
+      "path": "evidence/validation/terraform-fmt.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/validation/terraform-validate.txt",
+      "bytes": 2759,
+      "sha256": "240a70c1a41333f94a20f28fb6acc31dbe18e4e4264c5c665ed7147323bd7930"
+    },
+    {
+      "path": "evidence/validation/tflint.txt",
+      "bytes": 2979,
+      "sha256": "344b64ad005588df670d065967a002c90feffa5c37d19df6378905e18711c05e"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 453,
+      "sha256": "68250fd2de103494faaedf6a645a6cbf2d272718817b226de637df4b7bac5790"
+    },
+    {
+      "path": "requirements-collectors.txt",
+      "bytes": 15,
+      "sha256": "e8b6aedd3ac1acb5f106cbc7be878ee39cc2234d26660fc27df8e7de0706d462"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 47,
+      "sha256": "533c0dfdeb35a5cbf8bc66a0bdbf2a898ecfe433dcfcd8c110b67444e643f12e"
+    },
+    {
+      "path": "requirements-security.txt",
+      "bytes": 17,
+      "sha256": "67be40ca27980754bb377535f800c34abfd514199dbe035e4c3aadc0f7dfac5f"
+    },
+    {
+      "path": "scripts/README.md",
+      "bytes": 1318,
+      "sha256": "a50d3011ab82ebf91fd86df3a6eb1079e918a3d40dca4d8a6cb627df31edab91"
+    },
+    {
+      "path": "scripts/automation/clean.py",
+      "bytes": 324,
+      "sha256": "73402dd83916fa1bf334e54c26e0f49bb37910eaea6abb69ae80eae94a96cdbb"
+    },
+    {
+      "path": "scripts/automation/install_ci_tools.py",
+      "bytes": 1239,
+      "sha256": "b5e618008c4c745e1052b1018f08914ec155fdda1db2bfbfd8687a2b7b139b7e"
+    },
+    {
+      "path": "scripts/automation/portfolio_validate.py",
+      "bytes": 1512,
+      "sha256": "156ac2be1b0979bb9f74d1a52f650636132067e8db9c2fb6449bd59b69709956"
+    },
+    {
+      "path": "scripts/automation/run_all.py",
+      "bytes": 5447,
+      "sha256": "17b61b42f4a34dbb4442fad19382fd8d603624bef91f49401efab6dc1335517e"
+    },
+    {
+      "path": "scripts/automation/tool-downloads.json",
+      "bytes": 422,
+      "sha256": "fe018daf4fc0fd21823822d67fe391827d1faa3cc0393ac46ffba48cd5aa5eb4"
+    },
+    {
+      "path": "scripts/collectors/aws_security_groups.py",
+      "bytes": 3189,
+      "sha256": "9ecb7cc62efd1e599b16a832525212586405c29e615107a4f1cd5aafb5b6d469"
+    },
+    {
+      "path": "scripts/dr/readiness_check.py",
+      "bytes": 1893,
+      "sha256": "755688ba5fba350abe3c30bf9233a861533a35b51922c0e586f43f2ad4fabd54"
+    },
+    {
+      "path": "scripts/finops/cost_guardrails.py",
+      "bytes": 1510,
+      "sha256": "0219425c0b85626169457950f09017f8835306802902eb4e1068e42713e986d6"
+    },
+    {
+      "path": "scripts/iac/plan_policy.py",
+      "bytes": 898,
+      "sha256": "4b1c8ebde7cf024391d6951ab6e46260cfd152717eb3f76b8c62ae8cedfb1b15"
+    },
+    {
+      "path": "scripts/iac/terraform_guard.py",
+      "bytes": 698,
+      "sha256": "a3ebe2e581a86e350fda14bea4820726d15ec756421bff6b0e785105cd57940e"
+    },
+    {
+      "path": "scripts/iac/validate_terraform.py",
+      "bytes": 1828,
+      "sha256": "bf00da35cf6cba92a2b7f574be841f6e02c8438aa4866e719e585e74a7aae2ee"
+    },
+    {
+      "path": "scripts/iam/access_review.py",
+      "bytes": 2047,
+      "sha256": "7f46834e9be65c756bdda7db4f2c4d358791cd0606cb18e4d9dc5dea62e4b4d2"
+    },
+    {
+      "path": "scripts/operations/ticket_metrics.py",
+      "bytes": 2757,
+      "sha256": "dc958fdc8254aee4d89a9f68710505bc55666128b8615d05a55489d72caf6a80"
+    },
+    {
+      "path": "scripts/reports/automation_summary.json",
+      "bytes": 10100,
+      "sha256": "02b7e7103103f3176f7da4871bd3868aec3c2a78177dc4beaa9b029ff7f47eab"
+    },
+    {
+      "path": "scripts/reports/cost_guardrails.json",
+      "bytes": 579,
+      "sha256": "444fc82c029b29a1636818d8f8dcde0723f8c71517c58f73031b7270fc1efce6"
+    },
+    {
+      "path": "scripts/reports/detection_results.json",
+      "bytes": 1797,
+      "sha256": "043ab591d0e3d1d3c0a2d8edd227b8d623abaaaca216688ecb21b555009a1a16"
+    },
+    {
+      "path": "scripts/reports/dr_readiness.json",
+      "bytes": 67,
+      "sha256": "97ed2dcd31259b4c4bf51947249b1e2b90cc590a1d1979ecb815c43048f888f2"
+    },
+    {
+      "path": "scripts/reports/iam_access_review.json",
+      "bytes": 764,
+      "sha256": "72e36d83e9102bb78a9732812e04d805466591cddc1602c92326d1e8270d34cc"
+    },
+    {
+      "path": "scripts/reports/portfolio_validation.json",
+      "bytes": 92,
+      "sha256": "d5da77a881652818b1c2c5ea73ed5da95d5e38f11c0268fb18dbe7bd7a58ed0b"
+    },
+    {
+      "path": "scripts/reports/security_baseline.json",
+      "bytes": 1104,
+      "sha256": "31e896bb3dfa61e7802f7de96473bc7b670168548787de5dc79dd0c5a700ed45"
+    },
+    {
+      "path": "scripts/reports/support_metrics.json",
+      "bytes": 1056,
+      "sha256": "7ae4b46a812dc41dfa7fa700ae5d0dfa6985e1e359354913a974aa746be914a7"
+    },
+    {
+      "path": "scripts/run.ps1",
+      "bytes": 244,
+      "sha256": "5e8fd8cf01a9418ebd9beaff834c753da99035cff4a5c0c1e36931c30cccedd9"
+    },
+    {
+      "path": "scripts/run.sh",
+      "bytes": 194,
+      "sha256": "b838d294891914fbc7e63d05d9b2b0a7f2a5f4201c8802599437c2e58c7556f0"
+    },
+    {
+      "path": "scripts/sample_data/aws_security_groups.json",
+      "bytes": 274,
+      "sha256": "149a3c4c8f5eef4a9b07c86bd9a3727057ab6c3bc2e18f6e3e63a68ab61ed671"
+    },
+    {
+      "path": "scripts/sample_data/dr_assets.json",
+      "bytes": 679,
+      "sha256": "0222ac352ec084fbe20117667ce505570bf7a834c87745ad3e784900291ed5d8"
+    },
+    {
+      "path": "scripts/sample_data/iam_users.json",
+      "bytes": 1014,
+      "sha256": "d4e6e9fef463320aaf993b4fe111978c483cb71e9a873fb15a81e6db71816eff"
+    },
+    {
+      "path": "scripts/sample_data/resources.json",
+      "bytes": 1314,
+      "sha256": "7d223060bc0f20e8aa9d38396adb92c4b266cd27fc2b6d919d8b9e569b1dc8f0"
+    },
+    {
+      "path": "scripts/security/baseline_audit.py",
+      "bytes": 2148,
+      "sha256": "dc5dd328c38e6a50a0c791c572fa28ce750897f3b867b865d710e7bc65529d7e"
+    },
+    {
+      "path": "scripts/security/run_detections.py",
+      "bytes": 1080,
+      "sha256": "8f5a01b99116f6ff1170f6278a253a86d415653ea3a3dc03d97669ab4c5a18f7"
+    },
+    {
+      "path": "scripts/tests/test_controls.py",
+      "bytes": 1286,
+      "sha256": "d295666314172d1ca369699f5f74d176907dac9fc38f433e5565cafdfaac05a2"
+    },
+    {
+      "path": "src/csop/__init__.py",
+      "bytes": 90,
+      "sha256": "2aea8dd2c836a55929b9e3c2d4c0f8ee9fa2ea5c5c415a36bc4abf10108ad201"
+    },
+    {
+      "path": "src/csop/audit.py",
+      "bytes": 5229,
+      "sha256": "f95067a53b540ac4a0ed04d4276e165e3a6025711a7e3da5a68f06b45de58846"
+    },
+    {
+      "path": "src/csop/detections.py",
+      "bytes": 5378,
+      "sha256": "61ae28c9e6ef3e0b7e388facc7b32ad21a4805f2637a1dca8c70122e84537a90"
+    },
+    {
+      "path": "src/csop/inventory.py",
+      "bytes": 3217,
+      "sha256": "6d475af37180c09c63847e000669793fabd394144e267f7a5233b162f65601c6"
+    },
+    {
+      "path": "src/csop/plan_policy.py",
+      "bytes": 7046,
+      "sha256": "32d4d1d4b035653ee07756bb0307c1df8ab3ebf1fef86a1cd80ca4ca7941efc5"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "bytes": 2224,
+      "sha256": "14ba2abba61d1c7b612f26e75f1f3aadd89512f58064ff8a313e4e12d6363d36"
+    },
+    {
+      "path": "tests/test_collector.py",
+      "bytes": 951,
+      "sha256": "c1fece86a64b182f5e2c9a5d9a56cede0ef204af86abf7e7555248e79c478f87"
+    },
+    {
+      "path": "tests/test_delivery.py",
+      "bytes": 665,
+      "sha256": "2a8c0e9d564e6d4f35aef48a76fab2098d71e1ec242b191453d066112bbde982"
+    },
+    {
+      "path": "tests/test_detections.py",
+      "bytes": 3028,
+      "sha256": "0f248425de24be26621cadd794dffaea2747ca5156a0a0bce083e240a1ff831e"
+    },
+    {
+      "path": "tests/test_plan_policy.py",
+      "bytes": 2185,
+      "sha256": "ec57c359b83a2403fd4645adf10f14ca114684595e5b23e84b10cfdab094b9b8"
+    },
+    {
+      "path": "tests/test_security_engine.py",
+      "bytes": 3819,
+      "sha256": "d230f15b60eee4a5d97169a0bc0bac9b8b15635fea4aa3db83bf7006f05191d5"
+    },
+    {
+      "path": "tests/test_ticket_metrics.py",
+      "bytes": 1413,
+      "sha256": "8739c474833051b4eccc0d265454a3a1a114a3b836d54eb1a61fb7d3de973e25"
+    }
+  ]
+}
