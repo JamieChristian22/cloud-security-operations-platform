@@ -958,6 +958,16 @@ The portfolio emphasizes not only understanding security concepts, but also impl
 
 ---
 
+## 💖 Support This Project
+
+If this independent, educational cloud security portfolio is useful to you, consider [sponsoring Jamie Christian II on GitHub](https://github.com/sponsors/JamieChristian22). Sponsorship is optional and helps support development, testing, documentation, and ongoing maintenance.
+
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-on%20GitHub-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/JamieChristian22)
+
+You can also support this work by starring the repository, reporting reproducible issues, or contributing improvements. Sponsorship does not guarantee feature implementation or influence security findings.
+
+---
+
 ## 👨‍💻 Author
 
 ### Jamie Christian II
