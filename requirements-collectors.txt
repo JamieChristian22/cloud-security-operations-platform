@@ -1,0 +1,3 @@
+# Optional live, read-only AWS security group collection.
+# Not required for offline fixtures or GitHub Actions.
+boto3>=1.34,<2

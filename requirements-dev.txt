@@ -1,0 +1,4 @@
+# Local offline suite and CI dependencies; cloud credentials are not required.
+-e .
+pytest>=8.3,<9
+PyYAML>=6.0,<7
