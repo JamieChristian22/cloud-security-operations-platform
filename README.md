@@ -647,6 +647,12 @@ This scenario illustrates why secure infrastructure, effective support operation
 
 ---
 
+## 🖥️ Interactive Security Demo
+
+Explore the [offline CloudGuardian findings dashboard](demo/cloudguardian.html) to filter eight synthetic assessment findings by severity, provider, and keyword. The [interactive demo guide](docs/INTERACTIVE-DEMO.md) explains local operation, data provenance and limitations. This static demonstration does not access cloud accounts or modify resources.
+
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites
