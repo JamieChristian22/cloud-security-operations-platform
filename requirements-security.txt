@@ -1,0 +1,3 @@
+# Optional isolated security-scanner environment.
+# TFLint and Gitleaks are native binaries verified by scripts/automation/install_ci_tools.py.
+checkov>=3,<4
