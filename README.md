@@ -688,10 +688,10 @@ python -m venv .venv
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install pytest
+python -m pip install -r requirements-dev.txt
 ```
 
-The existing Makefile references `requirements-dev.txt`, which was missing from the inspected repository. Until that file is added, avoid relying on `make setup` as a complete installation procedure.
+The same dependency list is used by `make setup` and the hosted offline CI job. No cloud credentials are needed. Optional read-only AWS collection uses `requirements-collectors.txt`; infrastructure scanning uses `requirements-security.txt` in an isolated environment.
 
 ### 4. Run Offline Validation
 
@@ -760,6 +760,8 @@ The orchestrator aggregates check results into:
 [`scripts/reports/automation_summary.json`](scripts/reports/automation_summary.json)
 
 The runner evaluates individual return codes and records a consolidated status.
+
+[CI workflow](.github/workflows/ci.yml) defines separate required-to-pass offline, Terraform, and security jobs. Hosted success must be verified from the actual pull-request checks; these synthetic controls are not live cloud tests. [Evidence map](PORTFOLIO-EVIDENCE.md) links each capability to source and proof.
 
 ### How to Independently Verify
 
