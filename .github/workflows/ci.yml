@@ -1,0 +1,49 @@
+name: Cloud security offline validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloud-security-offline-validation
+  cancel-in-progress: true
+
+jobs:
+  offline-validation:
+    name: Python tests and synthetic security controls
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out source (no persisted credentials)
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - name: Install test dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Compile Python source
+        run: python -m compileall -q src scripts tests 04-cloudguardian-security-auditor
+      - name: Run offline controls and regression tests
+        run: python scripts/automation/run_all.py
+      - name: Preserve reproducible evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloud-security-offline-evidence
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            scripts/reports/automation_summary.json
+            scripts/reports/portfolio_validation.json
+            scripts/reports/detection_results.json
+            evidence/validation/python-junit.xml
