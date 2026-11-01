@@ -16,7 +16,7 @@
 
 Run `python scripts/automation/run_all.py`. For Terraform, install the recorded CLI version and run `python scripts/iac/validate_terraform.py`. The latter initializes, validates and tests the root and all three modules, saves separate logs and fails if any step fails. Provider downloads require internet access; mocked tests do not require cloud credentials.
 
-Run security tools in an isolated virtual environment with `requirements-security.txt`. Checkov's HCL dependency differs from the optional HCL parser used for structural checks, so avoid mixing those packages into an unrelated application environment.
+Run Checkov in an isolated virtual environment using `requirements-security.txt`. The pinned binary URLs and SHA256 checks for TFLint and Gitleaks are in `scripts/automation/tool-downloads.json` and installed by `scripts/automation/install_ci_tools.py` on supported Linux AMD64 machines. Scanner exceptions must remain visible and do not constitute production risk approval.
 
 ## Evidence policy
 
@@ -24,4 +24,4 @@ Results are generated from actual commands. Every check has a command, return co
 
 ## CI acceptance after upload
 
-A maintainer should observe the first hosted run, download its artifacts, fix runner-specific issues if any, and then require the offline, terraform and security jobs in branch protection. Setting up a workflow file alone does not enable required checks. Keep deployment permissions separate from validation permissions.
+The feature-branch `.github/workflows/ci.yml` defines three jobs named `offline`, `terraform`, and `security`, with read-only repository permissions, pinned actions, offline fixture testing, Terraform mocked validation, and secrets/IaC scanning. A maintainer must inspect the actual hosted run and its artifacts, fix runner-specific failures, then configure required checks/branch protection. A workflow file alone does not establish successful CI or deploy infrastructure.
