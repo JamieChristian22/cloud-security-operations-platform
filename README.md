@@ -991,3 +991,7 @@ See the repository's [LICENSE](LICENSE) file for licensing terms.
 **☁️ Build Securely • 🔐 Control Access • 🛠️ Operate Reliably • 🚨 Detect Threats • 🔍 Investigate with Evidence • 🤖 Automate Security • 🧪 Validate Improvements**
 
 *An integrated technical portfolio demonstrating the engineering practices behind reliable, secure, and maintainable cloud operations.*
+
+## Reviewer guide and asset provenance
+
+Use [REVIEWER_GUIDE.md](REVIEWER_GUIDE.md) to navigate tracked evidence and review sample dataset/media source and reuse rights. Listings are not proof of ownership or license clearance.
